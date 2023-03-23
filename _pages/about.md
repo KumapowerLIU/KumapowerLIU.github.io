@@ -52,9 +52,9 @@ My research interest includes *2D/3D Generation, digital human, neural rendering
 
 [Human MotionFormer: Transferring Human Motions with Vision Transformers.](https://arxiv.org/pdf/2302.11306.pdf)
 
-**Hongyu Liu**, Xintong Han, Chenbin Jin, Lihui Qian, Huawei Wei, Zhe Lin, Faqiang Wang, Haoye Dong, Yibing Song, Jia Xu and Qifeng Chen
+**Hongyu Liu**, Xintong Han, Chenbin Jin, Lihui Qian, Huawei Wei, Zhe Lin, Faqiang Wang, Haoye Dong, Yibing Song, Jia Xu and Qifeng Chen.
 
-[**Project page**](#jump1) [**Code**](https://github.com/KumapowerLIU/Human-MotionFormer)
+[**Project**](#jump1) [**Code**](https://github.com/KumapowerLIU/Human-MotionFormer)
   
   
 </div>
@@ -66,7 +66,7 @@ My research interest includes *2D/3D Generation, digital human, neural rendering
 
 [ One Model to Edit Them All: Free-Form Text-Driven Image Manipulation with Semantic Modulations.](https://arxiv.org/pdf/2210.07883.pdf)
 
-Yiming Zhu*, **Hongyu Liu***, Yibing Song, Xintong Han, Chun Yuan, Qifeng Chen and  Jue Wang.(* denotes equal contribution)
+Yiming Zhu \*, **Hongyu Liu** \*, Yibing Song, Xintong Han, Chun Yuan, Qifeng Chen and  Jue Wang (\* denotes equal contribution). 
   
 [**Code**](https://github.com/kristen-rang/FFCLIP)
   
@@ -120,7 +120,7 @@ Yiming Zhu*, **Hongyu Liu***, Yibing Song, Xintong Han, Chun Yuan, Qifeng Chen a
 
 [Coherent semantic attention for image inpainting.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Liu_Coherent_Semantic_Attention_for_Image_Inpainting_ICCV_2019_paper.pdf)
 
-**Hongyu Liu**, Bin Jiang, Yi Xiao and Chao Yang
+**Hongyu Liu**, Bin Jiang, Yi Xiao and Chao Yang.
   
 [**Code**](https://github.com/KumapowerLIU/CSA-inpainting)
   
@@ -133,7 +133,7 @@ Yiming Zhu*, **Hongyu Liu***, Yibing Song, Xintong Han, Chun Yuan, Qifeng Chen a
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Anime talking heads</div><img src='images/AnimeTalking.gif' alt="sym" width = "500" height = "300"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Anime talking heads. Control anime avatar with your expression in real time. We also bulid SDK, which only occupy 9% I7 CPU's performance.(No GPU!)
+Anime talking heads. Control anime avatar with your expression in real time. We also bulid SDK, which only occupy 9% I7 CPU's performance (No GPU!). 
   
 [Meaida](https://www.sohu.com/a/481791844_118792)
     
@@ -164,7 +164,7 @@ Consumer Digital Human. Given a single image(T pose), we can create an avatar an
  <div class='paper-box'><div class='paper-box-image'><div><div class="badge">3D Face reconstruction</div><img src='images/3DFace.png' alt="sym" width = "500" height = "300"></div></div>
 <div class='paper-box-text' markdown="1">
 
-3D Face reconstruction. Refine the UV Texture of flame. We use [DECA](https://github.com/YadiraF/DECA) as our code base.
+3D Face reconstruction. Refining the UV Texture of [FLAME](https://flame.is.tue.mpg.de/). We use [DECA](https://github.com/YadiraF/DECA) as our code base.
      
 </div>
 </div>
@@ -183,7 +183,7 @@ Consumer Digital Human. Given a single image(T pose), we can create an avatar an
 
 
 # 💬 Invited Talks
-- *2021*, Combining Deep Neural Networks for Efficient Image Restoration and Editing. [Link](https://www.cvmart.net/community/detail/5581)
+- *2021* Combining Deep Neural Networks for Efficient Image Restoration and Editing. [Link](https://www.cvmart.net/community/detail/5581)
 
 # ✏ Academic Reviewer
 * Conference
