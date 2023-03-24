@@ -41,7 +41,7 @@ My research interest includes *2D/3D Generation, digital human, neural rendering
 
 **Hongyu Liu**, Yibing Song and  Qifeng Chen.
 
-[**Project**](#jump1) [**Code**](https://github.com/KumapowerLIU/CLCAE)
+[**Project**](https://kumapowerliu.github.io/CLCAE) [**Code**](https://github.com/KumapowerLIU/CLCAE)
   
   
 </div>
