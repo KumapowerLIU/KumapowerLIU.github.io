@@ -135,7 +135,7 @@ Yiming Zhu \*, **Hongyu Liu** \*, Yibing Song, Xintong Han, Chun Yuan, Qifeng Ch
 
 Anime talking heads. Control anime avatar with your expression in real time. We also bulid SDK, which only occupy 9% I7 CPU's performance (No GPU!). 
   
-[Meaida](https://www.sohu.com/a/481791844_118792)
+[Media](https://www.sohu.com/a/481791844_118792)
     
 </div>
 </div>
