@@ -127,7 +127,7 @@ Yiming Zhu \*, **Hongyu Liu** \*, Yibing Song, Xintong Han, Chun Yuan, Qifeng Ch
   
 </div>
 </div>
-##  :eyes: Preprints
+## 🧱 Preprints
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/GOAE.gif' alt="sym" width = "500" height = "300"></div></div>
 <div class='paper-box-text' markdown="1">
 
