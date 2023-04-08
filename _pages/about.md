@@ -127,12 +127,17 @@ Yiming Zhu \*, **Hongyu Liu** \*, Yibing Song, Xintong Han, Chun Yuan, Qifeng Ch
   
 </div>
 </div>
-## Preprints
+##  :eyes: Preprints
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/GOAE.gif' alt="sym" width = "500" height = "300"></div></div>
+<div class='paper-box-text' markdown="1">
+
 [Make Encoder Great Again in 3D GAN Inversion through Geometry and Occlusion-Aware Encoding.](https://arxiv.org/pdf/2303.12326.pdf)
 
 Ziyang Yuan, Yiming Zhu1, Yu Li, **Hongyu Liu** and  Chun Yuan.
   
 [**Project**](https://eg3d-goae.github.io/)
+</div>
+</div>
 
 # 🙈 Projects 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Anime talking heads</div><img src='images/AnimeTalking.gif' alt="sym" width = "500" height = "300"></div></div>
