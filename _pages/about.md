@@ -54,7 +54,7 @@ My research interest includes *2D/3D Generation, digital human, neural rendering
 
 **Hongyu Liu**, Xintong Han, Chenbin Jin, Lihui Qian, Huawei Wei, Zhe Lin, Faqiang Wang, Haoye Dong, Yibing Song, Jia Xu and Qifeng Chen.
 
-[**Project**](#jump1) [**Code**](https://github.com/KumapowerLIU/Human-MotionFormer)
+[**Project**](https://kumapowerliu.github.io/Human-MotionFormer) [**Code**](https://github.com/KumapowerLIU/Human-MotionFormer)
   
   
 </div>
