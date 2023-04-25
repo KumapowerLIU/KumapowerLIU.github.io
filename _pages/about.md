@@ -197,16 +197,16 @@ Consumer Digital Human. Given a single image(T pose), we can create an avatar an
 
 # ✏ Academic Reviewer
 * Conference
-CVPR 2021, 2022, 2023. ECCV 2020, 2022. ICCV 2021. ICLR 2022, 2023. NeurIPS 2022. ICML 2023.
+CVPR 2021, 2022, 2023. ECCV 2020, 2022. ICCV 2021, 2023. ICLR 2022, 2023. NeurIPS 2022,2023. ICML 2023.
 * Journal
 TNNCL, TVCG, TMM, TCSVT
 * Outstanding reviewer
 NeurIPS, 2022
 
 # 💻 Work Experience
-- *2022.9 - Present*, [Tencet AI Lab](https://ai.tencent.com/), Intern.
+- *2022.9 - Present*, [Tencent AI Lab](https://ai.tencent.com/), Intern.
 - *2020.07 - 2022.07*, [Huya Inc](https://ir.huya.com/), Computer vision engineer 
-- *2020.2 - 2020.7*, [Tencet AI Lab](https://ai.tencent.com/), Intern. 
+- *2020.2 - 2020.7*, [Tencent AI Lab](https://ai.tencent.com/), Intern. 
 - *2019.10 - 2019.11*, [Sense Time](https://www.sensetime.com/cn), Intern.
 - *2018.7 - 2018.9*, [Hua Wei](https://www.huawei.com/en/), Intern.
 
