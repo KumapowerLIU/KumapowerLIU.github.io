@@ -29,6 +29,8 @@ My research interest includes *2D/3D Generation, digital human, neural rendering
 
 **I love fishing very much, and my dream is to go fishing in all over China!**
 # 🔥 News
+- *2023.05*: &nbsp;🎉🎉 I will join  Ant Research as an intern, which is supervised by [XuanWang](https://xuanwangvc.github.io/). And I will focus on 3D Generation.
+- *2023.05*: &nbsp;🎉🎉 XFormer is accepted by IJCAI2023.
 - *2023.03*: &nbsp;🎉🎉 My new home page is online. 
 
 
