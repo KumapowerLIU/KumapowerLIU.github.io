@@ -34,6 +34,16 @@ My research interest includes *2D/3D Generation, digital human, neural rendering
 
 # 📝 Selected Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2023</div><img src='images/XFormer.png' alt="sym" width = "500" height = "300"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[XFormer: Fast and Accurate Monocular 3D Body Capture.](https://arxiv.org/pdf/2305.11101.pdf)
+
+Lihui Qian, Xintong Han, Faqiang Wang, **Hongyu Liu**, Huawei Wei, Zhe Lin, Haoye Dong, Haoye Dong, Zhiwen Li, Huawei Wei, Zhe Lin and Chengbin Jin.
+  
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='images/CLCAE.png' alt="sym" width = "500" height = "300"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -182,6 +192,8 @@ Consumer Digital Human. Given a single image(T pose), we can create an avatar an
 
 
 # 🎖 Honors and Awards
+- *2022* HuNan outstanding master graduation thesis. 
+- *2022* HuNan outstanding master graduation thesis. 
 - *2020* CCF outstanding master graduation thesis. 
 - *2020* School-level outstanding graduation thesis of HuNan University. 
 - *2019* National Scholarship.
