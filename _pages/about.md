@@ -195,7 +195,6 @@ Consumer Digital Human. Given a single image(T pose), we can create an avatar an
 
 # 🎖 Honors and Awards
 - *2022* HuNan outstanding master graduation thesis. 
-- *2022* HuNan outstanding master graduation thesis. 
 - *2020* CCF outstanding master graduation thesis. 
 - *2020* School-level outstanding graduation thesis of HuNan University. 
 - *2019* National Scholarship.
@@ -218,7 +217,7 @@ TNNCL, TVCG, TMM, TCSVT
 NeurIPS, 2022
 
 # 💻 Work Experience
-- *2022.9 - Present*, [Tencent AI Lab](https://ai.tencent.com/), Intern.
+- *2022.9 - 2023.5*, [Tencent AI Lab](https://ai.tencent.com/), Intern.
 - *2020.07 - 2022.07*, [Huya Inc](https://ir.huya.com/), Computer vision engineer 
 - *2020.2 - 2020.7*, [Tencent AI Lab](https://ai.tencent.com/), Intern. 
 - *2019.10 - 2019.11*, [Sense Time](https://www.sensetime.com/cn), Intern.
