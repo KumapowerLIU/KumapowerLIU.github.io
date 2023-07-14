@@ -27,14 +27,25 @@ Meanwhile, I have cooperated many times with my good friend [Ziyu Wan](http://ra
 
 My research interest includes *2D/3D Generation, digital human, neural rendering and contrastive learning*. 
 
-**I love fishing very much, and my dream is to go fishing in all over China!**
+**I love fishing very much, and my dream is to go fishing all over China!**
 # 🔥 News
+- *2023.06*: &nbsp;🎉🎉 GOAE is accepted to ICCV2023.
 - *2023.05*: &nbsp;🎉🎉 I will join  Ant Research as an intern, which is supervised by [XuanWang](https://xuanwangvc.github.io/). And I will focus on 3D Generation.
-- *2023.05*: &nbsp;🎉🎉 XFormer is accepted by IJCAI2023.
+- *2023.05*: &nbsp;🎉🎉 XFormer is accepted to IJCAI2023.
 - *2023.03*: &nbsp;🎉🎉 My new home page is online. 
 
 
 # 📝 Selected Publications 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV2023</div><img src='images/GOAE.gif' alt="sym" width = "500" height = "300"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Make Encoder Great Again in 3D GAN Inversion through Geometry and Occlusion-Aware Encoding.](https://arxiv.org/pdf/2303.12326.pdf)
+
+Ziyang Yuan, Yiming Zhu1, Yu Li, **Hongyu Liu** and  Chun Yuan.
+  
+[**Project**](https://eg3d-goae.github.io/)
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2023</div><img src='images/XFormer.png' alt="sym" width = "500" height = "300"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -139,17 +150,7 @@ Yiming Zhu \*, **Hongyu Liu** \*, Yibing Song, Xintong Han, Chun Yuan, Qifeng Ch
   
 </div>
 </div>
-## 🧱 Preprints
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">  </div><img src='images/GOAE.gif' alt="sym" width = "500" height = "300"></div></div>
-<div class='paper-box-text' markdown="1">
 
-[Make Encoder Great Again in 3D GAN Inversion through Geometry and Occlusion-Aware Encoding.](https://arxiv.org/pdf/2303.12326.pdf)
-
-Ziyang Yuan, Yiming Zhu1, Yu Li, **Hongyu Liu** and  Chun Yuan.
-  
-[**Project**](https://eg3d-goae.github.io/)
-</div>
-</div>
 
 # 🙈 Projects 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Anime talking heads</div><img src='images/AnimeTalking.gif' alt="sym" width = "500" height = "300"></div></div>
@@ -210,7 +211,7 @@ Consumer Digital Human. Given a single image(T pose), we can create an avatar an
 
 # ✏ Academic Reviewer
 * Conference
-CVPR 2021, 2022, 2023. ECCV 2020, 2022. ICCV 2021, 2023. ICLR 2022, 2023. NeurIPS 2022,2023. ICML 2023.
+CVPR, ECCV, ICCV, ICLR, NeurIPS, ICML.
 * Journal
 TNNCL, TVCG, TMM, TCSVT
 * Outstanding reviewer
