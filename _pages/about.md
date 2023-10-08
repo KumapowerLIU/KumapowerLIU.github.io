@@ -17,7 +17,7 @@ redirect_from:
 <span id="jump1"></span>
 <span class='anchor' id='about-me'></span>
 
-I am a first-year Ph.D. student at the Department of Computer Science and Engineering,  [HKUST](https://hkust.edu.hk/) advised by [Prof. Qifeng Chen](https://cqf.io/).
+I am a second-year Ph.D. student at the Department of Computer Science and Engineering,  [HKUST](https://hkust.edu.hk/) advised by [Prof. Qifeng Chen](https://cqf.io/).
 
 Before joining HUKST. I spend two wonderful years in Huya as a computer vision engineer led by [Xintong Han](https://xthan.github.io/) and [Jia Xu](https://pages.cs.wisc.edu/~jiaxu/). 
 
@@ -29,7 +29,7 @@ My research interest includes *2D/3D Generation, digital human, neural rendering
 
 **I love fishing very much, and my dream is to go fishing all over China!**
 # 🔥 News
-- *2023.06*: &nbsp;🎉🎉 GOAE is accepted to ICCV2023.
+- *2023.07*: &nbsp;🎉🎉 GOAE is accepted to ICCV2023.
 - *2023.05*: &nbsp;🎉🎉 I will join  Ant Research as an intern, which is supervised by [XuanWang](https://xuanwangvc.github.io/). And I will focus on 3D Generation.
 - *2023.05*: &nbsp;🎉🎉 XFormer is accepted to IJCAI2023.
 - *2023.03*: &nbsp;🎉🎉 My new home page is online. 
@@ -41,7 +41,7 @@ My research interest includes *2D/3D Generation, digital human, neural rendering
 
 [Make Encoder Great Again in 3D GAN Inversion through Geometry and Occlusion-Aware Encoding.](https://arxiv.org/pdf/2303.12326.pdf)
 
-Ziyang Yuan, Yiming Zhu1, Yu Li, **Hongyu Liu** and  Chun Yuan.
+Ziyang Yuan \*, Yiming Zhu \*, Yu Li, **Hongyu Liu** and  Chun Yuan (\* denotes equal contribution).
   
 [**Project**](https://eg3d-goae.github.io/)
 </div>
@@ -197,10 +197,10 @@ Consumer Digital Human. Given a single image(T pose), we can create an avatar an
 # 🎖 Honors and Awards
 - *2022* HuNan outstanding master graduation thesis. 
 - *2020* CCF outstanding master graduation thesis. 
-- *2020* School-level outstanding graduation thesis of HuNan University. 
-- *2019* National Scholarship.
+- *2020* School-level outstanding graduation thesis of HuNan University.
 - *2020* Provincial outstanding graduates of  HuNan.
 - *2020* School-level outstanding graduates of HuNan University.
+- *2019* National Scholarship.
 - *2018* CCF BIG DATA 2018 best application paper award.
 - *2018* Third place out of 390 teams, Few-Shot Classification in AI FUTURELAB 2018.
 
