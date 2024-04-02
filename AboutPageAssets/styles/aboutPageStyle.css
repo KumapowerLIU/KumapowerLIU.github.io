@@ -580,3 +580,179 @@ footer .footerNote {
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
 }
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    /*background-color: #ECE9EE;*/
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    /*color: #001968;*/
+}
+
+.fancy-line {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #B3C4E6 70%);
+    display: inline-block;
+}
+
+h3 {
+    /*text-decoration: underline 0.2rem;*/
+    /*color: #001968;*/
+}
+
+.row {
+    /*background-color: #ECE9EE;*/
+}
+
+h1 {
+    margin-bottom: 2rem;
+    /*color: #3764be;*/
+}
+
+.container {
+    /*width: 1050px;*/
+}
+
+
+
+a:hover {
+    color: #cb5920;
+    text-decoration: none;
+}
+
+b {
+    /*color: #3764be;*/
+}
+
+
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 4px solid #222222;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin: 0 0 2px 0;
+}
+
+.label-info {
+    background-color: #3764be;
+}
+
+.item {
+    background-color: #ddd;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.highlight {
+    background-color: #ffffd4;
+}
+
+.label {
+    font-size: 13px;
+}
+
+.one {
+    position: relative;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+}
+
+.two {
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+}
+
+.limit-items .items li:nth-of-type(n + 6) {
+    display: none;
+}
+
+.limit-items #show-all:checked~.items li {
+    display: list-item;
+}
+
+.limit-items #show-all~label[for='show-all'] {
+    display: none;
+}
+
+.limit-items #show-all:checked~.text-hide {
+    display: inline-block;
+}
+
+.limit-items #show-all:not(:checked)~.text-show {
+    display: inline-block;
+}
+
+/* OPTIONAL */
+
+/* Style label as button below items */
+
+.limit-items {
+    position: relative;
+    padding-bottom: 2em;
+}
+
+.limit-items #show-all {
+    display: none;
+}
+
+.limit-items label[for='show-all'] {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.75em;
+    text-align: center;
+    line-height: 1em;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #444;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.limit-items label[for='show-all']:hover {
+    border: 1px solid #aaa;
+    border-radius: 0px;
+}
+
+.limit-items label[for='show-all']:active {
+    border: 1px solid #000;
+    border-radius: 0px;
+    background-color: #eee;
+    color: #000;
+}
