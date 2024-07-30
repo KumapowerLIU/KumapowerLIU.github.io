@@ -570,6 +570,11 @@ footer .footerNote {
   position: relative;
 }
 
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: auto;
+}
 .two {
 /*
   width: 160px;

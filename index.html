@@ -95,29 +95,35 @@
             <label for="show-all" class="text-hide"><h6 style="margin:0em">Hide</h6></label>
             <div class="items">
                 <ul>
-                    <li>
-                        <b class="item">03 / 2024</b>&emsp; HeadArtist is accepted to <b style="color:darksalmon">SIGGRAPH2024</b>.
+					<li>
+                        <b class="item">05 / 2024</b>&emsp; Follow-Your-Emoji paper is accepted to <b style="color:darksalmon">SIGGRAPH 2024</b>.
                     </li>
 					<li>
-                        <b class="item">02 / 2024</b>&emsp; CAD is accepted to <b style="color:darksalmon">CVPR2024</b>.
+                        <b class="item">05 / 2024</b>&emsp; We released a survey paper: LLMs Meet Multimodal Generation and Editing: A Survey.
                     </li>
                     <li>
-                        <b class="item">09 / 2023</b>&emsp; GOAE is accepted to <b style="color:darksalmon">ICCV2023</b>.
+                        <b class="item">03 / 2024</b>&emsp; HeadArtist is accepted to <b style="color:darksalmon">SIGGRAPH 2024</b>.
+                    </li>
+					<li>
+                        <b class="item">02 / 2024</b>&emsp; CAD is accepted to <b style="color:darksalmon">CVPR 2024</b>.
+                    </li>
+                    <li>
+                        <b class="item">09 / 2023</b>&emsp; GOAE is accepted to <b style="color:darksalmon">ICCV 2023</b>.
                     </li>
                     <li>
                         <b class="item">07 / 2023</b>&emsp; I am joining  <b style="color:darksalmon">AntGroup</b> as an intern.
                     </li>
                     <li>
-                        <b class="item">03 / 2023</b>&emsp; XFormer is accepted to <b style="color:darksalmon">IJCAI2023</b>.
+                        <b class="item">03 / 2023</b>&emsp; XFormer is accepted to <b style="color:darksalmon">IJCAI 2023</b>.
                     </li>
                     <li>
-                        <b class="item">02 / 2023</b>&emsp;CLCAE is accepted to <b style="color:darksalmon">CVPR2023</b>.
+                        <b class="item">02 / 2023</b>&emsp;CLCAE is accepted to <b style="color:darksalmon">CVPR 2023</b>.
                     </li>
                     <li>
-                        <b class="item">01 / 2023</b>&emsp;Human MotionFormer is accepted to <b style="color:darksalmon">ICLR2023</b>.
+                        <b class="item">01 / 2023</b>&emsp;Human MotionFormer is accepted to <b style="color:darksalmon">ICLR 2023</b>.
                     </li>
                     <li>
-                        <b class="item">09 / 2022</b>&emsp;FFCLIP is accepted to <b style="color:darksalmon">NeurIPS2022 as spotlight</b>.
+                        <b class="item">09 / 2022</b>&emsp;FFCLIP is accepted to <b style="color:darksalmon">NeurIPS 2022 as spotlight</b>.
                     </li>
                     <li>
                         <b class="item">09 / 2022</b>&emsp;I am starting my PhD at  <b style="color:darksalmon">HKUST</b>.
@@ -135,6 +141,109 @@
     <hr class="sectionTitleRule">
 
     <hr class="sectionTitleRule2">
+	       	<!-- FollowEmoji -->
+	  <div onmouseout="FollowEmoji_stop()" onmouseover="FollowEmoji_start()">
+	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
+			<div class="one">
+                <div class="two" id="FollowEmoji_image">
+					<img src="AboutPageAssets/images/FollowEmoji_1.gif" width="100%">
+					<img src="AboutPageAssets/images/FollowEmoji_2.gif" width="100%">
+					<img src="AboutPageAssets/images/FollowEmoji_3.gif" width="100%">
+
+				  </div>
+					<img src="AboutPageAssets/images/FollowEmoji_1.png" width="100%">
+					<img src="AboutPageAssets/images/FollowEmoji_2.png" width="100%">
+					<img src="AboutPageAssets/images/FollowEmoji_3.png" width="100%">
+
+              </div>
+              <script type="text/javascript">
+                function FollowEmoji_start() {
+                  document.getElementById('FollowEmoji_image').style.opacity = "1";
+                }
+
+                function FollowEmoji_stop() {
+                  document.getElementById('FollowEmoji_image').style.opacity = "0";
+                }
+                FollowEmoji_stop()
+              </script>
+	  	</div>
+
+	  	<section class="section2Content">
+      		<h2 class="sectionContentTitle">Follow-Your-Emoji: Fine-Controllable and Expressive Freestyle Portrait Animation </h2>
+      		<h3 class="sectionContentSubTitle"> Yue Ma<sup>*</sup>,  <b>Hongyu LIU<sup>*</sup></b>, Hongfa Wang<sup>*</sup>, Heng Pan<sup>*</sup>, Yingqing He, Junkun Yuan, Ailing Zeng, Chengfei Cai, Heung-Yeung Shum, Wei Liu, Qifeng Chen (* denotes equal contribution)
+	 		</h3>
+		  	<h3 class="sectionContentSubTitle"><em>ACM Special Interest Group for Computer Graphics and Interactive Techniques Asia (SIGGRAPH Asia) 2024  <br>
+	 		</em></h3>
+    	</section>
+		<aside class="externalResourcesNav"  style="margin-top:0%">
+		  <div class="dropdown"><span></span><a  href="https://follow-your-emoji.github.io/" target="_blank">Project Page</a></div>
+		  <div class="dropdown"> <span>Abstract</span>
+			<div class="dropdown-content">
+			  <p style="text-align:left;"> We present Follow-Your-Emoji, a diffusion-based framework for portrait animation, which animates a reference
+portrait with target landmark sequences. The main challenge of portrait animation is to preserve the identity of
+the reference portrait and transfer the target expression to
+this portrait while maintaining temporal consistency and fidelity. To address these challenges, Follow-Your-Emoji
+equipped the powerful Stable Diffusion model with two
+well-designed technologies. Specifically, we first adopt a
+new explicit motion signal, namely expression-aware landmark, to guide the animation process. We discover this
+landmark can not only ensure the accurate motion alignment between the reference portrait and target motion during inference but also increase the ability to portray exaggerated expressions (i.e., large pupil movements) and avoid
+identity leakage. Then, we propose a facial fine-grained loss to improve the model’s ability of subtle expression perception and reference portrait appearance reconstruction by
+using both expression and facial masks. Accordingly, our
+method demonstrates significant performance in controlling
+the expression of freestyle portraits, including real humans,
+cartoons, sculptures, and even animals. By leveraging a
+simple and effective progressive generation strategy, we extend our model to stable long-term animation, thus increasing its potential application value. To address the lack of a
+benchmark for this field, we introduce EmojiBench, a comprehensive benchmark comprising diverse portrait images,
+driving videos, and landmarks. We show extensive evaluations on EmojiBench to verify the superiority of FollowYour-Emoji.</p>
+			</div>
+		  </div>
+		  <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2406.01900" target="_blank">Paper</a></div>
+			<div class="dropdown"><span></span><a href="https://github.com/mayuelala/FollowYourEmoji" target="_blank">Code</a></div>
+		</aside>
+	 </div>
+
+	  <br><br><br>
+
+	  	       	<!--LLM Survey -->
+	  <div onmouseout="LLMSurvey_stop()" onmouseover="LLMSurvey_start()">
+	  	<div class="sectionContent" style="padding:0px;vertical-align:middle">
+			<div class="one">
+
+					<img  class="aligncenter" src="AboutPageAssets/images/survey_llm.jpeg"  width="45%" height="45%">
+
+
+              </div>
+              <script type="text/javascript">
+                function LLMSurvey_start() {
+                  document.getElementById('LLMSurvey_image').style.opacity = "1";
+                }
+
+                function LLMSurvey_stop() {
+                  document.getElementById('LLMSurvey_image').style.opacity = "0";
+                }
+                LLMSurvey_stop()
+              </script>
+	  	</div>
+
+	  	<section class="section2Content">
+      		<h2 class="sectionContentTitle">LLMs Meet Multimodal Generation and Editing: A Survey</h2>
+      		<h3 class="sectionContentSubTitle"> Yingqing He<sup>*</sup>, Zhaoyang Liu<sup>*</sup>, Jingye Chen<sup>*</sup>, Zeyue Tian<sup>*</sup>, <b>Hongyu LIU<sup>*</sup></b>, Xiaowei Chi<sup>*</sup>, Runtao Liu<sup>*</sup>, Ruibin Yuan<sup>*</sup>, Yazhou Xing<sup>*</sup>, Wenhai Wang, Jifeng Dai, Yong Zhang, Wei Xue, Qifeng Liu, Yike Guo, Qifeng Chen (* denotes equal contribution)
+	 		</h3>
+		  	<h3 class="sectionContentSubTitle"><em>ArXiv 2024  <br>
+	 		</em></h3>
+    	</section>
+		<aside class="externalResourcesNav"  style="margin-top:0%">
+		  <div class="dropdown"><span></span><a  href="https://github.com/YingqingHe/Awesome-LLMs-meet-Multimodal-Generation" target="_blank">Project Page</a></div>
+		  <div class="dropdown"> <span>Abstract</span>
+			<div class="dropdown-content">
+			  <p style="text-align:left;"> This survey includes works of image, video, 3D, and audio generation and editing. We emphasize the roles of LLMs on the generation and editing of these modalities. We also includes works of multimodal agents and generative AI safety.</p>
+			</div>
+		  </div>
+		  <div class="dropdown"><span></span><a href="https://arxiv.org/abs/2405.19334" target="_blank">Paper</a></div>
+		</aside>
+	 </div>
+
+	  <br><br><br>
 
     	<!-- HeadArtist -->
 	  <div onmouseout="HeadArtist_stop()" onmouseover="HeadArtist_start()">
@@ -160,7 +269,7 @@
 
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle">HeadArtist: Text-conditioned 3D Head Generation with Self Score Distillation </h2>
-      		<h3 class="sectionContentSubTitle"> <b>Hongyu LIU</b>, Xuan Wang, Ziyu Wan, Yujun Shen, Yibing Song, Jing Liao, <br>Qifeng Chen
+      		<h3 class="sectionContentSubTitle"> <b>Hongyu LIU</b>, Xuan Wang, Ziyu Wan, Yujun Shen, Yibing Song, Jing Liao, Qifeng Chen
 	 		</h3>		
 		  	<h3 class="sectionContentSubTitle"><em>ACM Special Interest Group for Computer Graphics and Interactive Techniques (SIGGRAPH) 2024 <br>
 	 		</em></h3>
@@ -247,7 +356,7 @@
 	  	</div>
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle"> Make Encoder Great Again in 3D GAN Inversion through Geometry and Occlusion-Aware Encoding. </h2>
-      		<h3 class="sectionContentSubTitle"> Ziyang Yuan<sup>*</sup>, Yiming Zhu<sup>*</sup>, Yu Li, <b>Hongyu Liu</b>, Chun Yuan (* denotes equal contribution).
+      		<h3 class="sectionContentSubTitle"> Ziyang Yuan<sup>*</sup>, Yiming Zhu<sup>*</sup>, Yu Li, <b>Hongyu Liu</b>, Chun Yuan (* denotes equal contribution)
 	 		</h3>
 		  	<h3 class="sectionContentSubTitle"><em>  International Conference on Computer Vision (ICCV) 2023
 	 		</em></h3>
@@ -289,7 +398,7 @@
 	  	</div>
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle"> XFormer: Fast and Accurate Monocular 3D Body Capture. </h2>
-      		<h3 class="sectionContentSubTitle">Lihui Qian, Xintong Han, Faqiang Wang, <b>Hongyu Liu</b>, Huawei Wei, Zhe Lin, Haoye Dong, Zhiwen Li, Huawei Wei, Chengbin Jin.
+      		<h3 class="sectionContentSubTitle">Lihui Qian, Xintong Han, Faqiang Wang, <b>Hongyu Liu</b>, Huawei Wei, Zhe Lin, Haoye Dong, Zhiwen Li, Huawei Wei, Chengbin Jin
 	 		</h3>
 		  	<h3 class="sectionContentSubTitle"><em> International Joint Conference on Artificial Intelligence (IJCAI) 2023
 	 		</em></h3>
@@ -344,7 +453,7 @@ backbone, XFormer delivers state-of-the-art performance on Huamn3.6 and 3DPW dat
 	  	</div>
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle"> Delving StyleGAN Inversion for Image Editing:  A Foundation Latent Space Viewpoint</h2>
-      		<h3 class="sectionContentSubTitle"> <b>Hongyu Liu</b>, Yibing Song, Qifeng Chen.
+      		<h3 class="sectionContentSubTitle"> <b>Hongyu Liu</b>, Yibing Song, Qifeng Chen
 	 		</h3>
 		  	<h3 class="sectionContentSubTitle"><em> IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023
 	 		</em></h3>
@@ -385,7 +494,7 @@ backbone, XFormer delivers state-of-the-art performance on Huamn3.6 and 3DPW dat
 	  	</div>
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle"> Human MotionFormer: Transferring Human Motions with Vision Transformers </h2>
-      		<h3 class="sectionContentSubTitle"><b>Hongyu Liu</b>, Xintong Han, Chenbin Jin, Lihui Qian, Huawei Wei, Zhe Lin, Faqiang Wang, Haoye Dong, Yibing Song, Jia Xu, Qifeng Chen.
+      		<h3 class="sectionContentSubTitle"><b>Hongyu Liu</b>, Xintong Han, Chenbin Jin, Lihui Qian, Huawei Wei, Zhe Lin, Faqiang Wang, Haoye Dong, Yibing Song, Jia Xu, Qifeng Chen
 	 		</h3>
 		  	<h3 class="sectionContentSubTitle"><em>International Conference on Learning Representations (ICLR) 2023
 	 		</em></h3>
@@ -438,7 +547,7 @@ and quantitatively</p>
 	  	</div>
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle"> One Model to Edit Them All: Free-Form Text-Driven Image Manipulation with Semantic Modulations </h2>
-      		<h3 class="sectionContentSubTitle"> Yiming Zhu<sup>*</sup>, <b>Hongyu Liu</b><sup>*</sup>, Yibing Song, Xintong Han, Chun Yuan, Qifeng Chen, Jue Wang (* denotes equal contribution).
+      		<h3 class="sectionContentSubTitle"> Yiming Zhu<sup>*</sup>, <b>Hongyu Liu</b><sup>*</sup>, Yibing Song, Xintong Han, Chun Yuan, Qifeng Chen, Jue Wang (* denotes equal contribution)
 	 		</h3>
 		  	<h3 class="sectionContentSubTitle"><em>Neural Information Processing Systems (NeurIPS) 2022, <b style="color:darksalmon">Spotlight</b>
 	 		</em></h3>
@@ -480,7 +589,7 @@ and quantitatively</p>
 	  	</div>
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle"> Pd-gan: Probabilistic diverse gan for image inpainting </h2>
-      		<h3 class="sectionContentSubTitle"><b>Hongyu Liu</b>, Ziyu Wan, Wei Huang, Yibing Song, Xintong Han, Jing Liao.
+      		<h3 class="sectionContentSubTitle"><b>Hongyu Liu</b>, Ziyu Wan, Wei Huang, Yibing Song, Xintong Han, Jing Liao
 	 		</h3>
 		  	<h3 class="sectionContentSubTitle"><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2021
 	 		</em></h3>
@@ -538,7 +647,7 @@ Places2 and Paris Street View indicate that PD-GAN is effective for diverse and 
 	  	</div>
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle"> DeFLOCNet: Deep Image Editing via Flexible Low-level Controls </h2>
-      		<h3 class="sectionContentSubTitle"> <b>Hongyu Liu</b>, Ziyu Wan, Wei Huang, Yibing Song, Xintong Han, Jing Liao, Bin Jiang, Wei Liu.
+      		<h3 class="sectionContentSubTitle"> <b>Hongyu Liu</b>, Ziyu Wan, Wei Huang, Yibing Song, Xintong Han, Jing Liao, Bin Jiang, Wei Liu
 	 		</h3>
 		  	<h3 class="sectionContentSubTitle"><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2021
 	 		</em></h3>
@@ -593,7 +702,7 @@ pleasing content.</p>
 	  	</div>
 	  	<section class="section2Content">
       		<h2 class="sectionContentTitle"> Rethinking image inpainting via a mutual encoder-decoder with feature equalizations </h2>
-			<h3 class="sectionContentSubTitle"><b>Hongyu Liu</b>, Bing Jiang, Yibing Song, Wei Huang, Chao Yang.
+			<h3 class="sectionContentSubTitle"><b>Hongyu Liu</b>, Bing Jiang, Yibing Song, Wei Huang, Chao Yang
 	 		</h3>
 		  	<h3 class="sectionContentSubTitle"><em>European Conference on Computer Vision (ECCV) 2020, <b style="color:darksalmon">Oral</b>
 	 		</em></h3>
