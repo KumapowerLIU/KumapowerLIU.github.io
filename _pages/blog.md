@@ -1,7 +1,7 @@
 ---
 layout: default
-permalink: /memory/
-title: Memory
+permalink: /memories/
+title: Memories
 nav: true
 nav_order: 4
 pagination:
