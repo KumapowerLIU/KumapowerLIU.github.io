@@ -28,9 +28,10 @@
   author={Ma*, Yue and Liu*, Hongyu and Wang*, Hongfa and Pan*, Heng and He, Yingqing and Yuan, Junkun and Zeng, Ailing and Cai, Chengfei and Shum, Heung-Yeung and Liu, Wei and Chen, Qifeng},
   journal={ACM Special Interest Group for Computer Graphics and Interactive Techniques Asia (SIGGRAPH Asia)},
   year={2024},
+        selected={true},
 
     pdf = {https://arxiv.org/abs/2406.01900},
-    preview={FollowEmoji_1_resize.png},
+    preview={FollowEmoji_1-480.webp},
     abstract = {We present Follow-Your-Emoji, a diffusion-based framework for portrait animation that animates a reference portrait with target landmark sequences, addressing the challenges of preserving the identity of the reference portrait, transferring target expressions, and maintaining temporal consistency and fidelity by equipping the Stable Diffusion model with two key technologies: an explicit motion signal, namely expression-aware landmarks, to ensure accurate motion alignment, portray exaggerated expressions, and avoid identity leakage, and a facial fine-grained loss to enhance subtle expression perception and reference portrait reconstruction using expression and facial masks, achieving significant performance across diverse freestyle portraits (e.g., real humans, cartoons, sculptures, animals) with a progressive generation strategy for stable long-term animation, while introducing EmojiBench, a comprehensive benchmark of diverse portraits, driving videos, and landmarks, to verify its superiority through extensive evaluations.},
     bibtex_show={true},
     html={https://follow-your-emoji.github.io/},
@@ -55,8 +56,9 @@
   booktitle={ACM SIGGRAPH 2024 Conference Papers},
   pages={1--12},
   year={2024},
+      selected={true},
 
-  preview={HeadArtistTeaser.gif},
+  preview={HeadArtistTeaser-480.webp},
       html = {https://kumapowerliu.github.io/HeadArtist/},
   code = {https://github.com/KumapowerLIU/HeadArtist},
     abstract = {This work presents HeadArtist for 3D head generation from text descriptions. With a landmark-guided ControlNet serving as the generative prior, we come up with an efficient pipeline that optimizes a parameterized 3D head model under the supervision of the prior distillation itself. We call such a process self score distillation (SSD). In detail, given a sampled camera pose, we first render an image and its corresponding landmarks from the head model, and add some particular level of noise onto the image. The noisy image, landmarks, and text condition are then fed into the frozen ControlNet twice for noise prediction. Two different classifier-free guidance (CFG) weights are applied during these two predictions, and the prediction difference offers a direction on how the rendered image can better match the text of interest. Experimental results suggest that our approach delivers high-quality 3D head sculptures with adequate geometry and photo-realistic appearance, significantly outperforming state-of-the-art methods. We also show that the same pipeline well supports editing the generated heads, including both geometry deformation and appearance change.},
