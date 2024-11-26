@@ -6,7 +6,7 @@
   journal={In submission},
   selected={true},
   year={2024},
-  preview={animation.gif},
+  preview={AvatarArtist_teaser.gif},
   abstract = {This work focuses on open-domain 4D avatarization, with the purpose of creating a 4D avatar from a portrait image in an arbitrary style. We select parametric triplanes as the intermediate 4D representation and propose a practical training paradigm that takes advantage of both generative adversarial networks (GANs) and diffusion models. Our design stems from the observation that 4D GANs excel at bridging images and triplanes without supervision yet usually face challenges in handling diverse data distributions. A robust 2D diffusion prior emerges as the solution, assisting the GAN in transferring its expertise across various domains. The synergy between these experts permits the construction of a multi-domain image-triplane dataset, which drives the development of a general 4D avatar creator. Extensive experiments suggest that our model, AvatarArtist, is capable of producing high-quality 4D avatars with strong robustness to various source image domains. The code, the data, and the models will be made publicly available to facilitate future studies..},
 
 }
@@ -29,6 +29,7 @@
   year={2024},
     pdf = {https://arxiv.org/abs/2406.01900},
     preview={FollowEmoji_1.gif},
+    selected={true},
     abstract = {We present Follow-Your-Emoji, a diffusion-based framework for portrait animation that animates a reference portrait with target landmark sequences, addressing the challenges of preserving the identity of the reference portrait, transferring target expressions, and maintaining temporal consistency and fidelity by equipping the Stable Diffusion model with two key technologies: an explicit motion signal, namely expression-aware landmarks, to ensure accurate motion alignment, portray exaggerated expressions, and avoid identity leakage, and a facial fine-grained loss to enhance subtle expression perception and reference portrait reconstruction using expression and facial masks, achieving significant performance across diverse freestyle portraits (e.g., real humans, cartoons, sculptures, animals) with a progressive generation strategy for stable long-term animation, while introducing EmojiBench, a comprehensive benchmark of diverse portraits, driving videos, and landmarks, to verify its superiority through extensive evaluations.},
     bibtex_show={true},
     html={https://follow-your-emoji.github.io/},
@@ -59,6 +60,7 @@
   code = {https://github.com/KumapowerLIU/HeadArtist},
     abstract = {This work presents HeadArtist for 3D head generation from text descriptions. With a landmark-guided ControlNet serving as the generative prior, we come up with an efficient pipeline that optimizes a parameterized 3D head model under the supervision of the prior distillation itself. We call such a process self score distillation (SSD). In detail, given a sampled camera pose, we first render an image and its corresponding landmarks from the head model, and add some particular level of noise onto the image. The noisy image, landmarks, and text condition are then fed into the frozen ControlNet twice for noise prediction. Two different classifier-free guidance (CFG) weights are applied during these two predictions, and the prediction difference offers a direction on how the rendered image can better match the text of interest. Experimental results suggest that our approach delivers high-quality 3D head sculptures with adequate geometry and photo-realistic appearance, significantly outperforming state-of-the-art methods. We also show that the same pipeline well supports editing the generated heads, including both geometry deformation and appearance change.},
   pdf = {https://arxiv.org/abs/2312.07539},
+  selected={true}
 
 }
 
