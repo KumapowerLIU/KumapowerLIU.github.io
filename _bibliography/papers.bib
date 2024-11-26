@@ -1,115 +1,205 @@
 ---
 ---
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+@article{AvatarArtist,
+  title={AvatarArtist: Open-Domain 4D Avatarization},
+  author={Liu, Hongyu and Others},
+  journal={In submission},
   selected={true},
-  inspirehep_id = {3255}
+  year={2024},
+  preview={AvatarArtist_teaser.gif},
+  abstract = {This work focuses on open-domain 4D avatarization, with the purpose of creating a 4D avatar from a portrait image in an arbitrary style. We select parametric triplanes as the intermediate 4D representation and propose a practical training paradigm that takes advantage of both generative adversarial networks (GANs) and diffusion models. Our design stems from the observation that 4D GANs excel at bridging images and triplanes without supervision yet usually face challenges in handling diverse data distributions. A robust 2D diffusion prior emerges as the solution, assisting the GAN in transferring its expertise across various domains. The synergy between these experts permits the construction of a multi-domain image-triplane dataset, which drives the development of a general 4D avatar creator. Extensive experiments suggest that our model, AvatarArtist, is capable of producing high-quality 4D avatars with strong robustness to various source image domains. The code, the data, and the models will be made publicly available to facilitate future studies..},
+
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+@article{HeadArtist-VL,
+  title={HeadArtist-VL: Vision / Language Guided 3D Head Generation with Self Score Distillation},
+  author={Liu, Hongyu and Wang, Xuan and Wan, Ziyu and Shen, Yujun and Song, Yibing and Liao, Jing and Chen, Qifeng},
+  journal={In submission, extension of HeadArtist },
+  year={2024},
+  preview={HeadArtistPlus.PNG},
+  abstract = {We present HeadArtist-VL, a 3D head generation method that supports either vision or language input, utilizing a landmark-guided ControlNet as a generative prior and introducing a self-score distillation (SSD) pipeline that optimizes a parameterized 3D head model under the supervision of the prior itself, where given a sampled camera pose, an image and its landmarks are rendered from the head model, noised, and processed through a frozen ControlNet twice with different classifier-free guidance (CFG) weights to guide rendering alignment with language prompts, or for reference images, an image encoder extracts identity embeddings sent to the ControlNet, while a novel-view diffusion model synthesizes the reference image under the sampled pose to guide SSD, producing high-quality 3D head sculptures with rich geometry, photo-realistic appearance, and support for editing operations, significantly outperforming state-of-the-art methods.},
+
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{ma2024follow,
+  title={Follow-Your-Emoji: Fine-Controllable and Expressive Freestyle Portrait Animation},
+  author={Ma*, Yue and Liu*, Hongyu and Wang*, Hongfa and Pan*, Heng and He, Yingqing and Yuan, Junkun and Zeng, Ailing and Cai, Chengfei and Shum, Heung-Yeung and Liu, Wei and Chen, Qifeng},
+  journal={ACM Special Interest Group for Computer Graphics and Interactive Techniques Asia (SIGGRAPH Asia)},
+  year={2024},
+    pdf = {https://arxiv.org/abs/2406.01900},
+    preview={FollowEmoji_1.gif},
+    selected={true},
+    abstract = {We present Follow-Your-Emoji, a diffusion-based framework for portrait animation that animates a reference portrait with target landmark sequences, addressing the challenges of preserving the identity of the reference portrait, transferring target expressions, and maintaining temporal consistency and fidelity by equipping the Stable Diffusion model with two key technologies: an explicit motion signal, namely expression-aware landmarks, to ensure accurate motion alignment, portray exaggerated expressions, and avoid identity leakage, and a facial fine-grained loss to enhance subtle expression perception and reference portrait reconstruction using expression and facial masks, achieving significant performance across diverse freestyle portraits (e.g., real humans, cartoons, sculptures, animals) with a progressive generation strategy for stable long-term animation, while introducing EmojiBench, a comprehensive benchmark of diverse portraits, driving videos, and landmarks, to verify its superiority through extensive evaluations.},
+    bibtex_show={true},
+    html={https://follow-your-emoji.github.io/},
+    code = {https://github.com/mayuelala/FollowYourEmoji},
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{he2024llms,
+  title={LLMs Meet Multimodal Generation and Editing: A Survey},
+  author={He*, Yingqing and Liu*, Zhaoyang and Chen*, Jingye and Tian*, Zeyue and Liu*, Hongyu and Chi*, Xiaowei and Liu*, Runtao and Yuan*, Ruibin and Xing*, Yazhou and Wang, Wenhai and Dai, Jifeng and Zhang, Yong and Xue, Wei and Liu, Qifeng and Guo, Yike and Chen, Qifeng },
+  journal={arXiv preprint arXiv:2405.19334},
+  year={2024},
+  pdf = {https://arxiv.org/abs/2405.19334},
+    bibtex_show={true},
+      preview={survey_llm.PNG},
+    html={https://github.com/YingqingHe/Awesome-LLMs-meet-Multimodal-Generation},
+    abstract={This survey includes works of image, video, 3D, and audio generation and editing. We emphasize the roles of LLMs on the generation and editing of these modalities. We also includes works of multimodal agents and generative AI safety.},
 }
 
-@Article{einstein1905photoelectriceffect,
+@inproceedings{liu2024headartist,
+  title={Headartist: Text-conditioned 3d head generation with self score distillation},
+  author={Liu, Hongyu and Wang, Xuan and Wan, Ziyu and Shen, Yujun and Song, Yibing and Liao, Jing and Chen, Qifeng},
+  booktitle={ACM SIGGRAPH 2024 Conference Papers},
+  pages={1--12},
+  year={2024},
   bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+  preview={HeadartistTeaser.gif},
+      html = {https://kumapowerliu.github.io/HeadArtist/},
+  code = {https://github.com/KumapowerLIU/HeadArtist},
+    abstract = {This work presents HeadArtist for 3D head generation from text descriptions. With a landmark-guided ControlNet serving as the generative prior, we come up with an efficient pipeline that optimizes a parameterized 3D head model under the supervision of the prior distillation itself. We call such a process self score distillation (SSD). In detail, given a sampled camera pose, we first render an image and its corresponding landmarks from the head model, and add some particular level of noise onto the image. The noisy image, landmarks, and text condition are then fed into the frozen ControlNet twice for noise prediction. Two different classifier-free guidance (CFG) weights are applied during these two predictions, and the prediction difference offers a direction on how the rendered image can better match the text of interest. Experimental results suggest that our approach delivers high-quality 3D head sculptures with adequate geometry and photo-realistic appearance, significantly outperforming state-of-the-art methods. We also show that the same pipeline well supports editing the generated heads, including both geometry deformation and appearance change.},
+  pdf = {https://arxiv.org/abs/2312.07539},
+  selected={true}
+
 }
 
-@book{przibram1967letters,
+
+@inproceedings{wan2024cad,
+  title={Cad: Photorealistic 3d generation via adversarial distillation},
+  author={Wan, Ziyu and Paschalidou, Despoina and Huang, Ian and Liu, Hongyu and Shen, Bokui and Xiang, Xiaoyu and Liao, Jing and Guibas, Leonidas},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={10194--10207},
+  year={2024},
   bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+  preview={cad_teaser.gif},
+    html = {http://raywzy.com/CAD},
+  code = {https://github.com/raywzy/CAD},
+  abstract = {The increased demand for 3D data in AR/VR, robotics and gaming applications, gave rise to powerful generative pipelines capable of synthesizing high-quality 3D objects. Most of these models rely on the Score Distillation Sampling (SDS) algorithm to optimize a 3D representation such that the rendered image maintains a high likelihood as evaluated by a pre-trained diffusion model. However, finding a correct mode in the high-dimensional distribution produced by the diffusion model is challenging and often leads to issues such as over-saturation, over-smoothing, and Janus-like artifacts. In this paper, we propose a novel learning paradigm for 3D synthesis that utilizes pre-trained diffusion models. Instead of focusing on mode-seeking, our method directly models the distribution discrepancy between multi-view renderings and diffusion priors in an adversarial manner, which unlocks the generation of high-fidelity and photorealistic 3D content, conditioned on a single image and prompt. Moreover, by harnessing the latent space of GANs and expressive diffusion model priors, our method facilitates a wide variety of 3D applications including single-view reconstruction, high diversity generation and continuous 3D interpolation in the open domain. The experiments demonstrate the superiority of our pipeline compared to previous works in terms of generation quality and diversity.},
+  pdf = {https://arxiv.org/abs/2312.06663},
 }
+
+@inproceedings{yuan2023make,
+  title={Make encoder great again in 3d gan inversion through geometry and occlusion-aware encoding},
+  author={Yuan*, Ziyang and Zhu*, Yiming and Li, Yu and Liu, Hongyu and Yuan, Chun},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={2437--2447},
+  year={2023},
+  preview={GOAE.gif},
+    bibtex_show={true},
+  html = {https://eg3d-goae.github.io/},
+  abstract = {3D GAN inversion aims to achieve high reconstruction fidelity and reasonable 3D geometry simultaneously from a single image input. However, existing 3D GAN inversion methods rely on time-consuming optimization for each individual case. In this work, we introduce a novel encoder-based inversion framework based on EG3D, one of the most widely-used 3D GAN models. We leverage the inherent properties of EG3D's latent space to design a discriminator and a background depth regularization. This enables us to train a geometry-aware encoder capable of converting the input image into corresponding latent code. Additionally, we explore the feature space of EG3D and develop an adaptive refinement stage that improves the representation ability of features in EG3D to enhance the recovery of fine-grained textural details. Finally, we propose an occlusion-aware fusion operation to prevent distortion in unobserved regions. Our method achieves impressive results comparable to optimization-based methods while operating up to 500 times faster. Our framework is well-suited for applications such as semantic editing.},
+  code = {https://github.com/jiangyzy/GOAE},
+  pdf = {https://arxiv.org/abs/2303.12326},
+}
+
+@article{qian2023xformer,
+  title={XFormer: fast and accurate monocular 3D body capture},
+  author={Qian*, Lihui and Han*, Xintong and Wang, Faqiang and Liu, Hongyu and Dong, Haoye and Li, Zhiwen and Wei, Huawei and Lin, Zhe and Jin, Cheng-Bin},
+  journal={arXiv preprint arXiv:2305.11101},
+  year={2023},
+    bibtex_show={true},
+
+  preview={XFormer.png},
+  abstract = {We present XFormer, a novel human mesh and motion capture method that achieves real-time performance on consumer CPUs using only monocular images as input. The proposed network architecture consists of two branches: a keypoint branch that estimates 3D human mesh vertices from 2D keypoints, and an image branch that directly predicts from RGB image features. At the core of our method is a cross-modal transformer block, which facilitates information flow between the two branches by modeling the attention between 2D keypoint coordinates and image spatial features. Our architecture is carefully designed to enable training on diverse datasets, including images with 2D/3D annotations, images with 3D pseudo labels, and motion capture datasets without associated images. This design significantly enhances the accuracy and generalization ability of our system. Built on a lightweight backbone (MobileNetV3), our method achieves blazing-fast performance, running at over 30fps on a single CPU core, while maintaining competitive accuracy. Additionally, with an HRNet backbone, XFormer achieves state-of-the-art performance on the Human3.6 and 3DPW datasets.},
+    pdf = {https://arxiv.org/abs/2305.11101},
+}
+
+@inproceedings{liu2023delving,
+  title={Delving stylegan inversion for image editing: A foundation latent space viewpoint},
+  author={Liu, Hongyu and Song, Yibing and Chen, Qifeng},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition (CVPR)},
+  pages={10072--10082},
+  year={2023},
+  abstract = {GAN inversion and editing via StyleGAN maps an input image into the embedding spaces (W, W+, and F) to simultaneously maintain image fidelity and meaningful manipulation. From latent space W to extended latent space W+ to feature space F in StyleGAN, the editability of GAN inversion decreases while its reconstruction quality increases. Recent GAN inversion methods typically explore W+ and F rather than W to improve reconstruction fidelity while maintaining editability. As W+ and F are derived from W that is essentially the foundation latent space of StyleGAN, these GAN inversion methods focusing on W+ and F spaces could be improved by stepping back to W. In this work, we propose to first obtain the precise latent code in foundation latent space W. We introduce contrastive learning to align W and the image space for precise latent code discovery. %The obtaining process is by using contrastive learning to align W and the image space. Then, we leverage a cross-attention encoder to transform the obtained latent code in W into W+ and F, accordingly. Our experiments show that our exploration of the foundation latent space W improves the representation ability of latent codes in W+ and features in F, which yields state-of-the-art reconstruction fidelity and editability results on the standard benchmarks.},
+  pdf = {https://arxiv.org/abs/2211.11448},
+  bibtex_show={true},
+  preview={CLCAE.png},
+  code = {https://github.com/KumapowerLIU/CLCAE},
+  html = {https://kumapowerliu.github.io/CLCAE},
+}
+
+@article{liu2023human,
+  title={Human motionformer: Transferring human motions with vision transformers},
+  author={Liu*, Hongyu and Han*, Xintong and Jin, Chengbin and Qian, Lihui and Wei, Huawei and Lin, Zhe and Wang, Faqiang and Dong, Haoye and Song, Yibing and Xu, Jia and others},
+  journal={International Conference on Learning Representations (ICLR) },
+  year={2023},
+  abstract = {Human motion transfer aims to transfer motions from a target dynamic person to a source static one for motion synthesis. An accurate matching between the source person and the target motion in both large and subtle motion changes is vital for improving the transferred motion quality. In this paper, we propose Human MotionFormer, a hierarchical ViT framework that leverages global and local perceptions to capture large and subtle motion matching, respectively. It consists of two ViT encoders to extract input features (i.e., a target motion image and a source human image) and a ViT decoder with several cascaded blocks for feature matching and motion transfer. In each block, we set the target motion feature as Query and the source person as Key and Value, calculating the cross-attention maps to conduct a global feature matching. Further, we introduce a convolutional layer to improve the local perception after the global cross-attention computations. This matching process is implemented in both warping and generation branches to guide the motion transfer. During training, we propose a mutual learning loss to enable the co-supervision between warping and generation branches for better motion representations. Experiments show that our Human MotionFormer sets the new state-of-the-art performance both qualitatively and quantitatively.},
+   preview={MotionFormer.gif},
+  bibtex_show={true},
+  pdf = {https://arxiv.org/abs/2302.11306},
+}
+
+@article{zhu2022one,
+   abbr={Spotlight},
+  title={One model to edit them all: Free-form text-driven image manipulation with semantic modulations},
+  author={Zhu*, Yiming and Liu*, Hongyu and Song, Yibing and Yuan, Ziyang and Han, Xintong and Yuan, Chun and Chen, Qifeng and Wang, Jue},
+  journal={Advances in Neural Information Processing Systems (NeuralIPS)},
+  volume={35},
+  pages={25146--25159},
+  year={2022},
+  abstract = {Free-form text prompts allow users to describe their intentions during image manipulation conveniently. Based on the visual latent space of StyleGAN[21] and text embedding space of CLIP[34], studies focus on how to map these two latent spaces for text-driven attribute manipulations. Currently, the latent mapping between these two spaces is empirically designed and confines that each manipulation model can only handle one fixed text prompt. In this paper, we propose a method named Free-Form CLIP (FFCLIP), aiming to establish an automatic latent mapping so that one manipulation model handles free-form text prompts. Our FFCLIP has a cross-modality semantic modulation module containing semantic alignment and injection. The semantic alignment performs the automatic latent mapping via linear transformations with a cross attention mechanism. After alignment, we inject semantics from text prompt embeddings to the StyleGAN latent space. For one type of image (e.g., 'human portrait'), one FFCLIP model can be learned to handle free-form text prompts. Meanwhile, we observe that although each training text prompt only contains a single semantic meaning, FFCLIP can leverage text prompts with multiple semantic meanings for image manipulation. In the experiments, we evaluate FFCLIP on three types of images (i.e., 'human portraits', 'cars', and 'churches'). Both visual and numerical results show that FFCLIP effectively produces semantically accurate and visually realistic images.},
+  preview={FFCLIP.gif},
+  bibtex_show={true},
+  pdf = {https://arxiv.org/abs/2210.07883},
+  code = {https://github.com/kristen-rang/FFCLIP},
+
+}
+
+@inproceedings{liu2021pd,
+  title={Pd-gan: Probabilistic diverse gan for image inpainting},
+  author={Liu, Hongyu and Wan, Ziyu and Huang, Wei and Song, Yibing and Han, Xintong and Liao, Jing},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition (CVPR)},
+  pages={9371--9381},
+  year={2021},
+  abstract = {We propose PD-GAN, a probabilistic diverse GAN for image inpainting. Given an input image with arbitrary hole regions, PD-GAN produces multiple inpainting results with diverse and visually realistic content. Our PD-GAN is built upon a vanilla GAN which generates images based on random noise. During image generation, we modulate deep features of input random noise from coarse-to-fine by injecting an initially restored image and the hole regions in multiple scales. We argue that during hole filling, the pixels near the hole boundary should be more deterministic (i.e., with higher probability trusting the context and initially restored image to create natural inpainting boundary), while those pixels lying in the center of the hole should enjoy more degrees of freedom (i.e., more likely to depend on the random noise for enhancing diversity). To this end, we propose spatially probabilistic diversity normalization (SPDNorm) inside the modulation to model the probability of generating a pixel conditioned on the context information. SPDNorm dynamically balances the realism and diversity inside the hole region, making the generated content more diverse towards the hole center and resemble neighboring image content more towards the hole boundary. Meanwhile, we propose a perceptual diversity loss to further empower PD-GAN for diverse content generation. Experiments on benchmark datasets including CelebA-HQ, Places2, and Paris Street View indicate that PD-GAN is effective for diverse and visually realistic image restoration.},
+  bibtex_show={true},
+   preview={PDGAN.png},
+   pdf = {https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_PD-GAN_Probabilistic_Diverse_GAN_for_Image_Inpainting_CVPR_2021_paper.pdf},
+   code = {https://github.com/KumapowerLIU/PD-GAN},
+}
+
+@inproceedings{liu2021deflocnet,
+  title={Deflocnet: Deep image editing via flexible low-level controls},
+  author={Liu, Hongyu and Wan, Ziyu and Huang, Wei and Song, Yibing and Han, Xintong and Liao, Jing and Jiang, Bin and Liu, Wei},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={10765--10774},
+  year={2021},
+   abstract = {User-intended visual content fills the hole regions of an input image in the image editing scenario. The coarse low-level inputs, which typically consist of sparse sketch lines and color dots, convey user intentions for content creation (i.e., free-form editing). While existing methods combine an input image and these low-level controls for CNN inputs, the corresponding feature representations are not sufficient to convey user intentions, leading to unfaithfully generated content. In this paper, we propose DeFLOCNet which relies on a deep encoder-decoder CNN to retain the guidance of these controls in the deep feature representations. In each skip-connection layer, we design a structure generation block. Instead of attaching low-level controls to an input image, we inject these controls directly into each structure generation block for sketch line refinement and color propagation in the CNN feature space. We then concatenate the modulated features with the original decoder features for structure generation. Meanwhile, DeFLOCNet involves another decoder branch for texture generation and detail enhancement. Both structures and textures are rendered in the decoder, leading to user-intended editing results. Experiments on benchmarks demonstrate that DeFLOCNet effectively transforms different user intentions to create visually pleasing content.},
+   bibtex_show={true},
+   preview={Deflocnet.gif},
+   pdf = {https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_DeFLOCNet_Deep_Image_Editing_via_Flexible_Low-Level_Controls_CVPR_2021_paper.pdf},
+   code = {https://github.com/KumapowerLIU/DeFLOCNet},
+}
+
+
+@inproceedings{liu2020rethinking,
+   abbr={Oral},
+  title={Rethinking image inpainting via a mutual encoder-decoder with feature equalizations},
+  author={Liu, Hongyu and Jiang, Bin and Song, Yibing and Huang, Wei and Yang, Chao},
+  booktitle={Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part II 16 (ECCV)},
+  pages={725--741},
+  year={2020},
+  organization={Springer},
+  pdf = {https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123470715.pdf},
+  code = {https://github.com/KumapowerLIU/Rethinking-Inpainting-MEDFE},
+  preview={MADFE.png},
+  abstract ={Deep encoder-decoder based CNNs have advanced image inpainting methods for hole filling. While existing methods recover structures and textures step-by-step in the hole regions, they typically use two encoder-decoders for separate recovery. The CNN features of each encoder are learned to capture either missing structures or textures without considering them as a whole. The insufficient utilization of these encoder features hampers the performance of recovering both structures and textures. In this paper, we propose a mutual encoder-decoder CNN for joint recovery of both. We use CNN features from the deep and shallow layers of the encoder to represent structures and textures of an input image, respectively. The deep layer features are sent to a structure branch, while the shallow layer features are sent to a texture branch. In each branch, we fill holes in multiple scales of the CNN features. The filled CNN features from both branches are concatenated and then equalized. During feature equalization, we reweigh channel attentions first and propose a bilateral propagation activation function to enable spatial equalization. To this end, the filled CNN features of structure and texture mutually benefit each other to represent image content at all feature levels. We then use the equalized feature to supplement decoder features for output image generation through skip connections. Experiments on benchmark datasets show that the proposed method is effective to recover structures and textures and performs favorably against state-of-the-art approaches.},
+   bibtex_show={true}
+}
+
+@InProceedings{Liu_2019_ICCV,
+ bibtex_show={true},
+author = {Liu, Hongyu and Jiang, Bin and Xiao, Yi and Yang, Chao},
+title = {Coherent Semantic Attention for Image Inpainting},
+booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+abstract={The latest deep learning-based approaches have shown promising results for the challenging task of inpainting missing regions of an image. However, the existing methods often generate contents with blurry textures and distorted structures due to the discontinuity of the local pixels. From a semantic-level perspective, the local pixel discontinuity is mainly because these methods ignore the semantic relevance and feature continuity of hole regions. To handle this problem, we investigate the human behavior in repairing pictures and propose a fined deep generative model-based approach with a novel coherent semantic attention (CSA) layer, which can not only preserve contextual structure but also make more effective predictions of missing parts by modeling the semantic relevance between the holes features. The task is divided into rough, refinement as two steps and we model each step with a neural network under the U-Net architecture, where the CSA layer is embedded into the encoder of refinement step. Meanwhile, we further propose consistency loss and feature patch discriminator to stabilize the network training process and improve the details. The experiments on CelebA, Places2, and Paris StreetView datasets have validated the effectiveness of our proposed methods in image inpainting tasks and can obtain images with a higher quality as compared with the existing stateof-the-art approaches},
+month = {October},
+year = {2019},
+pdf = {https://openaccess.thecvf.com/content_ICCV_2019/papers/Liu_Coherent_Semantic_Attention_for_Image_Inpainting_ICCV_2019_paper.pdf},
+code = {https://github.com/KumapowerLIU/CSA-inpainting},
+preview={CSA.png},
+}
+
+
+
