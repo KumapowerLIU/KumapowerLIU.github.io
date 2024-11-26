@@ -2,7 +2,7 @@
 layout: page
 title: Consumer Digital Human.
 description:  Given a single image(T pose), we can create an avatar and drive this avatar with target motion.
-img: assets/img/project/digital.gif
+img: assets/img/project/Digital.gif
 redirect: https://github.com/xthan/smplreg/tree/main
 importance: 2
 category: work
