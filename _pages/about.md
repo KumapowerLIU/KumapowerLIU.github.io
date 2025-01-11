@@ -24,4 +24,4 @@ My primary research interests lie in 2D/3D generation, digital humans, neural re
 
 Outside of academia, I am passionate about fishing—it’s more than a hobby; it’s a dream of mine to fish across all of China!
 
-🔥 ***I am actively seeking global opportunities for academic exchange visits or research scientist internships in 2025, as well as full-time research scientist positions or faculty appointments starting in Fall 2025. If you are interested or aware of any opportunities, please feel free to reach out to me via email—I would be delighted to connect!***
+🔥 ***I am actively seeking global opportunities for academic exchange visits starting in Fall 2025. If you are interested or aware of any opportunities, please feel free to reach out to me via email—I would be delighted to connect!***
