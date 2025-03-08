@@ -9,7 +9,7 @@ profile:
   image: hongyu/japan_SteinsGate.webp
   image_circular: false # crops the image to make it circular
   more_info: >
-  <p>Taken at a real-life location from <a href="https://en.wikipedia.org/wiki/Steins;Gate" target="_blank">Steins;Gate</a> (my favorite anime).</p>
+    <p>Taken at a real-life location from SteinsGate (my favorite anime).</p>
 
  
 
