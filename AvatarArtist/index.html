@@ -55,6 +55,40 @@
 </head>
 
 <body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://kumapowerliu.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://kumapowerliu.github.io/HeadArtist">
+            HeadArtist-SIGGRAPH2024
+          </a>
+          <a class="navbar-item" href="https://follow-your-emoji.github.io/">
+            Follow-your-emoji-SIGGRAPHAsia2024
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
 <section class="hero">
   <div class="hero-body">
     <div class="container" style="text-align: center;">
@@ -64,6 +98,8 @@
       <div class="columns is-centered">
         <div class="column has-text-centered" style="max-width: 750px; text-align: center;">
           <h1 class="title is-3 publication-title">AvatarArtist: Open-Domain 4D Avatarization</h1>
+          <h1 class="title is-3 publication-title">CVPR 2025</h1>
+
           <div class="is-size-5 publication-authors">
             <!-- Paper authors -->
             <span class="author-block"> 
@@ -105,18 +141,31 @@
           </div>
 
           <div class="link-block" style="margin-top: 15px">
-            <a href="https://arxiv.org/abs/2412.12093" target="_blank" class="external-link button is-normal is-rounded is-dark">
+            <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
                 <i class="ai ai-arxiv"></i>
               </span>
               <span>arXiv</span>
             </a>
-            <a href="https://kumapowerliu.github.io/AvatarArtist" target="_blank"
+            <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="ai ai-arxiv"></i>
+              </span>
+              <span>Paper</span>
+            </a>
+            <a href="#" target="_blank"
             class="external-link button is-normal is-rounded is-dark">
             <span class="icon">
               <i class="fab fa-github"></i>
             </span>
-            <span>Code</span>
+            <span>Code(Coming Soon)</span>
+            </a>
+            <a href="#" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Demo(Coming Soon)</span>
             </a>
           </div>
         </div>
@@ -130,8 +179,8 @@
 <section class="hero is-small"></section>
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <video poster="teaser/teaser.jpg" id="video_teaser" autoplay muted playsinline loop style="width: 100%; object-fit: cover;">
-        <source src="teaser/teaser.mp4"
+      <video poster="videos/main.jpg" id="video_teaser" autoplay muted playsinline loop style="width: 100%; object-fit: cover;">
+        <source src="videos/main.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered" style="margin-top: 5px;">
@@ -239,7 +288,7 @@
       </h2>
       <div class="container is-max-desktop">
         <video poster="teaser/teaser.jpg" id="video_main" autoplay muted playsinline loop style="width: 100%; object-fit: cover;">
-          <source src="videos/main.mov"
+          <source src="teaser/teaser.mp4"
           type="video/mp4">
         </video>
       <!-- <div class="hero-body"> -->
@@ -261,7 +310,7 @@ We present a variety of avatars generated using AvatarArtist from input images a
             </h2>
             <hr style="border: none; height: 5px; background: transparent;">
           </div>
-          <video poster="videos/video_1.png" data-src="videos/video_1.mp4" id="video1" autoplay muted playsinline loop width="100%">
+          <video poster="videos/video_1.png" data-src="videos/video_1.mp4" id="video11" autoplay muted playsinline loop width="100%">
             <!-- Your video file here -->
             <source type="video/mp4">
           </video>
@@ -311,7 +360,7 @@ We present a variety of avatars generated using AvatarArtist from input images a
             </h2>
           </div>
           <hr style="border: none; height: 5px; background: transparent;">
-          <video poster="videos/video_4.png" data-src="videos/video_4.mp4" id="video4" autoplay muted playsinline loop width="100%" data-disable-autoplay="true">
+          <video poster="videos/video_4.png" data-src="videos/video_4.mp4" id="video14" autoplay muted playsinline loop width="100%" data-disable-autoplay="true">
             <!-- Your video file here -->
             <source type="video/mp4">
           </video>
@@ -328,7 +377,7 @@ We present a variety of avatars generated using AvatarArtist from input images a
             </h2>
           </div>
           <hr style="border: none; height: 5px; background: transparent;">
-          <video poster="videos/video_5.png" data-src="videos/video_5.mp4" id="video5" autoplay muted playsinline loop width="100%" data-disable-autoplay="true">
+          <video poster="videos/video_5.png" data-src="videos/video_5.mp4" id="video15" autoplay muted playsinline loop width="100%" data-disable-autoplay="true">
             <!-- Your video file here -->
             <source type="video/mp4">
           </video>
@@ -351,9 +400,9 @@ We present a variety of avatars generated using AvatarArtist from input images a
         For quanitative results, we refer to our paper.
       </h2>
 
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel-2" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="comparisons/compare_1.jpg" data-src="comparisons/compare_1.MOV" id="video4" autoplay muted playsinline loop width="100%" data-disable-autoplay="true">
+          <video poster="comparisons/compare_1.jpg" data-src="comparisons/compare_1.mp4" id="video4" autoplay muted playsinline loop width="100%" data-disable-autoplay="true">
             <!-- Your video file here -->
             <source type="video/mp4">
           </video>

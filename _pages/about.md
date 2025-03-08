@@ -6,10 +6,11 @@ subtitle: PhD Candidate
 
 profile:
   align: right
-  image: hongyu/hongyuliu_feilaidao.jpg
+  image: hongyu/japan_SteinsGate.webp
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>This is the first time I caught such a big mullet.</p>
+  <p>Taken at a real-life location from <a href="https://en.wikipedia.org/wiki/Steins;Gate" target="_blank">Steins;Gate</a> (my favorite anime).</p>
+
  
 
 news: true # includes a list of news items
