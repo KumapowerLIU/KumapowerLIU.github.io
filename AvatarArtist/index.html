@@ -529,6 +529,7 @@ We present a variety of avatars generated using AvatarArtist from input images a
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            Some elements were inspired by the <a href="https://felixtaubner.github.io/cap4d/" target="_blank">CAP4D</a> project page.
             We thank the  corresponding authors and models for their valuable contributions to research.
             This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
@@ -543,53 +544,22 @@ We present a variety of avatars generated using AvatarArtist from input images a
   <!-- End of Statcounter Code -->
 
   -->
+   <!-- Statcounter code for AvatarArtist
+  https://kumapowerliu.github.io/AvatarArtist/ on Google Sites (new) -->
   <script type="text/javascript">
-  var sc_project=13069450; 
-  var sc_invisible=1; 
-  var sc_security="05689037"; 
+  var sc_project=13101704;
+  var sc_invisible=0;
+  var sc_security="d85d7d56";
+  var scJsHost = "https://";
+  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+  "statcounter.com/counter/counter.js'></"+"script>");
   </script>
-  <script type="text/javascript"
-  src="https://www.statcounter.com/counter/counter.js" async></script>
-  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-  Statcounter" href="https://statcounter.com/" target="_blank"><img
-  class="statcounter" src="https://c.statcounter.com/13069450/0/05689037/1/"
-  alt="Web Analytics Made Easy - Statcounter"
-  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <noscript><div class="statcounter"><a title="real time web analytics"
+  href="https://statcounter.com/" target="_blank"><img class="statcounter"
+  src="https://c.statcounter.com/13101704/0/d85d7d56/0/" alt="real time web
+  analytics" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
 
-  <script type="module" defer>
-    import init, * as bindings from './static/wasm/brush-rigged-desktop.js';
-    const isWebGPUSupported = 'gpu' in navigator;
-    // Display a warning if WebGPU is not supported.
-    const warningElement = document.getElementById('webgpu-warning');
-    const canvasElement = document.getElementById('brush_canvas');
-  
-    // Prevent Brush from stealing focus.
-    const originalFocus = HTMLElement.prototype.focus;
-    HTMLElement.prototype.focus = function () {
-        if (!this.matches('[id="brush_canvas"]')) {
-            originalFocus.apply(this, arguments);
-        }
-    };
-  
-    if (isWebGPUSupported) {
-        const wasm = await init({ module_or_path: './static/wasm/brush-rigged-desktop.wasm' });
-        window.wasmBindings = bindings;
-        dispatchEvent(new CustomEvent("TrunkApplicationStarted", { detail: { wasm } }));
-    } else {
-        warningElement.style.display = 'block';
-        canvasElement.style.display = 'none';
-    }
-  </script>
-  
-  <script type="module" defer>
-    window.addEventListener("TrunkApplicationStarted", (e) => {
-        // Load with an initial URL.
-        console.log("starting")
-        var start_url = "https://qou4hg.db.files.1drv.com/y4mGpMH4PqKTuF31R_R-8IIEmoRiOTeNAphaIrY0Tc6PDQ8G9aElIGR2UXb8AUpbHFbJ6HEZjtp8YZH-dQAo1bCf8HQxYnv6BDf3Nitpf622C_kihZ_GpImqkfiFYGKgiugQ3lm6ECsM9YKgu4N2EwLhvfFHdGyjLxzFNRBD3vdnNywDbfu5INRMuSLc9rUYrRI_TMld896f0SjPVCCjyO4aw"
-        const viewer = new window.wasmBindings.EmbeddedViewer("brush_canvas", `?url=${start_url}&zen=true&focal=0.2&min_radius=1.3&max_radius=2.0&radius=1.5&min_pitch=-15.0&max_pitch=15.0&min_yaw=-45.0&max_yaw=45.0`)
-        window.viewer = viewer;
-    });
-  </script>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
