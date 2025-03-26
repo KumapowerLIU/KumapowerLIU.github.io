@@ -2,7 +2,7 @@
 layout: cv
 permalink: /cv/
 title: Biography
-nav: true
+nav: false
 nav_order: 5
  
 toc:
