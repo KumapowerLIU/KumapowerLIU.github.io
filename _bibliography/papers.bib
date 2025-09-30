@@ -1,5 +1,48 @@
 ---
 ---
+
+
+
+@article{ma2025followcreation,
+  title={Follow-Your-Creation: Empowering 4D Creation through Video Inpainting},
+  author={Ma*, Yue and Feng*, Yukun and Zhang*, Xinhua and  Liu, Hongyu and Zhang, Junhao David and Xing, Jinbo and Zhang, Yinhan and Yang, Ayden and Wang, Zeyu and Chen, Qifeng},
+  journal={arXiv preprint arXiv:2506.04590},
+  year={2025},
+
+    pdf = {https://arxiv.org/pdf/2506.04590},
+    preview={followcreation.png},
+    abstract = {We introduce Follow-Your-Creation, a novel 4D video creation framework capable of both generating and editing 4D content from a single monocular video input; by leveraging a powerful video inpainting foundation model as a generative prior, we reformulate 4D video creation as a video inpainting task, enabling the model to fill in missing content caused by camera trajectory changes or user edits; to facilitate this, we generate composite masked inpainting video data to effectively fine-tune the model for 4D video generation; given an input video and its associated camera trajectory, we first perform depth-based point cloud rendering to obtain invisibility masks that indicate the regions that should be completed; simultaneously, editing masks are introduced to specify user-defined modifications, and these are combined with the invisibility masks to create a composite masks dataset; during training, we randomly sample different types of masks to construct diverse and challenging inpainting scenarios, enhancing the model’s generalization and robustness in various 4D editing and generation tasks; to handle temporal consistency under large camera motion, we design a self-iterative tuning strategy that gradually increases the viewing angles during training, where the model is used to generate the next-stage training data after each fine-tuning iteration; moreover, we introduce a temporal packaging module during inference to enhance generation quality; our method effectively leverages the prior knowledge of the base model without degrading its original performance, enabling the generation of 4D videos with consistent multiview coherence; in addition, our approach supports prompt-based content editing, demonstrating strong flexibility and significantly outperforming state-of-the-art methods in both quality and versatility.},
+    bibtex_show={true},
+    html={https://follow-your-creation.github.io/},
+    code = {https://github.com/mayuelala/FollowYourCreation},
+}
+
+@article{ma2025followfaster,
+  title={Follow-Your-Emoji: Fine-Controllable and Expressive Freestyle Portrait Animation},
+  author={Ma*, Yue and Yan* Zexuan and  Liu*, Hongyu and Wang, Hongfa and Pan, Heng and He, Yingqing and Yuan, Junkun and Zeng, Ailing and Cai, Chengfei and Shum, Heung-Yeung and Li, Zhifeng and Liu, Wei and Zhang linfeng and Chen, Qifeng},
+  journal={International Journal of Computer Vision (IJCV)},
+  year={2025},
+  selected={true},
+
+    pdf = {https://arxiv.org/abs/2406.01900},
+    preview={followemojifaster,png},
+    abstract = {We present Follow-Your-Emoji-Faster, an efficient diffusion-based framework for freestyle portrait animation driven by facial landmarks; the main challenges in this task are preserving the identity of the reference portrait, accurately transferring target expressions, and maintaining long-term temporal consistency while ensuring generation efficiency; to address identity preservation and accurate expression retargeting, we enhance Stable Diffusion with two key components: expression-aware landmarks as explicit motion signals, which improve motion alignment, support exaggerated expressions, and reduce identity leakage, and a fine-grained facial loss that leverages both expression and facial masks to better capture subtle expressions and faithfully preserve the reference appearance; with these components, our model supports controllable and expressive animation across diverse portrait types, including real faces, cartoons, sculptures, and animals; however, diffusion-based frameworks typically struggle to efficiently generate long-term stable animation results, which remains a core challenge in this task; to address this, we propose a progressive generation strategy for stable long-term animation and introduce a Taylor-interpolated cache, achieving a 2.6× lossless acceleration; these two strategies ensure that our method produces high-quality results efficiently, making it user-friendly and accessible; finally, we introduce EmojiBench++, a more comprehensive benchmark comprising diverse portraits, driving videos, and landmark sequences; extensive evaluations on EmojiBench++ demonstrate that Follow-Your-Emoji-Faster achieves superior performance in both animation quality and controllability.},
+    bibtex_show={true},
+    html={https://follow-your-emoji.github.io/},
+    code = {https://github.com/mayuelala/FollowYourEmoji},
+}
+
+@article{HeadArtist-VL,
+  title={HeadArtist-VL: Vision / Language Guided 3D Head Generation with Self Score Distillation},
+  author={Liu, Hongyu and Wang, Xuan and Wan, Ziyu and Shen, Yujun and Song, Yibing and Liao, Jing and Chen, Qifeng},
+  journal={ IEEE Transactions on Pattern Analysis and Machine Intelligence （TPAMI）},
+  year={2025},
+  preview={HeadArtistPlus.PNG},
+  abstract = {We present HeadArtist-VL, a 3D head generation method that supports either vision or language input, utilizing a landmark-guided ControlNet as a generative prior and introducing a self-score distillation (SSD) pipeline that optimizes a parameterized 3D head model under the supervision of the prior itself, where given a sampled camera pose, an image and its landmarks are rendered from the head model, noised, and processed through a frozen ControlNet twice with different classifier-free guidance (CFG) weights to guide rendering alignment with language prompts, or for reference images, an image encoder extracts identity embeddings sent to the ControlNet, while a novel-view diffusion model synthesizes the reference image under the sampled pose to guide SSD, producing high-quality 3D head sculptures with rich geometry, photo-realistic appearance, and support for editing operations, significantly outperforming state-of-the-art methods.},
+  selected={true}
+
+}
+
 @article{liu2025avatarartist,
   title={AvatarArtist: Open-Domain 4D Avatarization},
   author={Liu, Hongyu and Wang, Xuan and Wan, Ziyu and Ma,Yue and Chen, Jingye and Fan, Yanbo and Shen, Yujun and Song, Yibing and Chen, Qifeng},
@@ -15,23 +58,11 @@
 
 }
 
-
-@article{HeadArtist-VL,
-  title={HeadArtist-VL: Vision / Language Guided 3D Head Generation with Self Score Distillation},
-  author={Liu, Hongyu and Wang, Xuan and Wan, Ziyu and Shen, Yujun and Song, Yibing and Liao, Jing and Chen, Qifeng},
-  journal={In submission, extension of HeadArtist },
-  year={2024},
-  preview={HeadArtistPlus.PNG},
-  abstract = {We present HeadArtist-VL, a 3D head generation method that supports either vision or language input, utilizing a landmark-guided ControlNet as a generative prior and introducing a self-score distillation (SSD) pipeline that optimizes a parameterized 3D head model under the supervision of the prior itself, where given a sampled camera pose, an image and its landmarks are rendered from the head model, noised, and processed through a frozen ControlNet twice with different classifier-free guidance (CFG) weights to guide rendering alignment with language prompts, or for reference images, an image encoder extracts identity embeddings sent to the ControlNet, while a novel-view diffusion model synthesizes the reference image under the sampled pose to guide SSD, producing high-quality 3D head sculptures with rich geometry, photo-realistic appearance, and support for editing operations, significantly outperforming state-of-the-art methods.},
-
-}
-
 @article{ma2024follow,
   title={Follow-Your-Emoji: Fine-Controllable and Expressive Freestyle Portrait Animation},
   author={Ma*, Yue and Liu*, Hongyu and Wang*, Hongfa and Pan*, Heng and He, Yingqing and Yuan, Junkun and Zeng, Ailing and Cai, Chengfei and Shum, Heung-Yeung and Liu, Wei and Chen, Qifeng},
   journal={ACM Special Interest Group for Computer Graphics and Interactive Techniques Asia (SIGGRAPH Asia)},
   year={2024},
-        selected={true},
 
     pdf = {https://arxiv.org/abs/2406.01900},
     preview={FollowEmoji_1-480.webp},
@@ -48,7 +79,7 @@
   year={2024},
   pdf = {https://arxiv.org/abs/2405.19334},
     bibtex_show={true},
-      preview={survey_llm.PNG},
+    preview={survey_llm.PNG},
     html={https://github.com/YingqingHe/Awesome-LLMs-meet-Multimodal-Generation},
     abstract={This survey includes works of image, video, 3D, and audio generation and editing. We emphasize the roles of LLMs on the generation and editing of these modalities. We also includes works of multimodal agents and generative AI safety.},
 }
@@ -59,8 +90,7 @@
   booktitle={ACM Special Interest Group for Computer Graphics and Interactive Techniques (SIGGRAPH)},
   pages={1--12},
   year={2024},
-  selected={true},
-      bibtex_show={true},
+    bibtex_show={true},
   preview={HeadArtistTeaser-480.webp},
       html = {https://kumapowerliu.github.io/HeadArtist/},
   code = {https://github.com/ant-research/HeadArtist},
