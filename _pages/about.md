@@ -23,11 +23,26 @@ My research focuses on a range of topics in computer vision and graphics, includ
 Beyond research, I’m deeply passionate about fishing—not just as a hobby, but as a personal dream. I aspire to one day travel across China to fish in its diverse rivers, lakes, and coastal waters, using the journey as a way to connect with nature, explore local cultures, and find inspiration outside the lab.
 
 <p align="center">
-  <img src="../assets/img/hongyu/antgroup.png" alt="AntGroup" height="40" style="margin: 0 10px;">
-  <img src="../assets/img/hongyu/tencent.png" alt="Tencent" height="40" style="margin: 0 10px;">
-  <img src="../assets/img/hongyu/hkust.png" alt="sensetime" height="40" style="margin: 0 10px;">
-  <img src="../assets/img/hongyu/huya.png" alt="huya" height="40" style="margin: 0 10px;">
-  <img src="../assets/img/hongyu/sensetime.png" alt="sensetime" height="40" style="margin: 0 10px;">
-  <img src="../assets/img/hongyu/huawei.png" alt="huawei" height="40" style="margin: 0 10px;">
-  <img src="../assets/img/hongyu/hnu.png" alt="hnu" height="40" style="margin: 0 10px;">
+  <a href="https://www.antgroup.com/en" target="_blank">
+    <img src="../assets/img/hongyu/antgroup.png" alt="AntGroup" height="40" style="margin: 0 10px;">
+  </a>
+  <a href="https://ailab.tencent.com/ailab/en/index/" target="_blank">
+    <img src="../assets/img/hongyu/tencent.png" alt="Tencent" height="40" style="margin: 0 10px;">
+  </a>
+  <a href="https://hkust.edu.hk/" target="_blank">
+    <img src="../assets/img/hongyu/hkust.png" alt="HKUST" height="40" style="margin: 0 10px;">
+  </a>
+  <a href="https://ir.huya.com/" target="_blank">
+    <img src="../assets/img/hongyu/huya.png" alt="huya" height="40" style="margin: 0 10px;">
+  </a>
+  <a href="https://www.sensetime.com/en" target="_blank">
+    <img src="../assets/img/hongyu/sensetime2.png" alt="sensetime" height="40" style="margin: 0 10px;">
+  </a>
+  <a href="https://www.huawei.com/en/" target="_blank">
+    <img src="../assets/img/hongyu/huawei.png" alt="huawei" height="40" style="margin: 0 10px;">
+  </a>
+    <a href="https://www-en.hnu.edu.cn/" target="_blank">
+    <img src="../assets/img/hongyu/hnu.png" alt="hnu" height="40" style="margin: 0 10px;">
+  </a>
 </p>
+
