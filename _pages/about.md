@@ -23,5 +23,5 @@ My research focuses on a range of topics in computer vision and graphics, includ
 Beyond research, I’m deeply passionate about fishing—not just as a hobby, but as a personal dream. I aspire to one day travel across China to fish in its diverse rivers, lakes, and coastal waters, using the journey as a way to connect with nature, explore local cultures, and find inspiration outside the lab.
 
 <p align="center">
-  <img src="hongyu/antgroup.png" alt="AntGroup" height="40" style="margin: 0 10px;">
+  <img src="../assets/img/hongyu/antgroup.png" alt="AntGroup" height="40" style="margin: 0 10px;">
 </p>
