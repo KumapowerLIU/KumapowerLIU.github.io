@@ -1,8 +1,6 @@
 ---
 ---
 
-
-
 @article{ma2025followcreation,
   title={Follow-Your-Creation: Empowering 4D Creation through Video Inpainting},
   author={Ma*, Yue and Feng*, Yukun and Zhang*, Xinhua and  Liu, Hongyu and Zhang, Junhao David and Xing, Jinbo and Zhang, Yinhan and Yang, Ayden and Wang, Zeyu and Chen, Qifeng},
@@ -18,14 +16,13 @@
 }
 
 @article{ma2025followfaster,
-  title={Follow-Your-Emoji: Fine-Controllable and Expressive Freestyle Portrait Animation},
-  author={Ma*, Yue and Yan* Zexuan and  Liu*, Hongyu and Wang, Hongfa and Pan, Heng and He, Yingqing and Yuan, Junkun and Zeng, Ailing and Cai, Chengfei and Shum, Heung-Yeung and Li, Zhifeng and Liu, Wei and Zhang linfeng and Chen, Qifeng},
+  title={	Follow-Your-Emoji-Faster: Towards Efficient, Fine-Controllable, and Expressive Freestyle Portrait Animation},
+  author={Ma*, Yue and Yan*, Zexuan and  Liu*, Hongyu and Wang, Hongfa and Pan, Heng and He, Yingqing and Yuan, Junkun and Zeng, Ailing and Cai, Chengfei and Shum, Heung-Yeung and Li, Zhifeng and Liu, Wei and Zhang linfeng and Chen, Qifeng},
   journal={International Journal of Computer Vision (IJCV)},
   year={2025},
   selected={true},
-
-    pdf = {https://arxiv.org/abs/2406.01900},
-    preview={followemojifaster,png},
+    pdf = {https://arxiv.org/pdf/2509.16630},
+    preview={followemojifaster.png},
     abstract = {We present Follow-Your-Emoji-Faster, an efficient diffusion-based framework for freestyle portrait animation driven by facial landmarks; the main challenges in this task are preserving the identity of the reference portrait, accurately transferring target expressions, and maintaining long-term temporal consistency while ensuring generation efficiency; to address identity preservation and accurate expression retargeting, we enhance Stable Diffusion with two key components: expression-aware landmarks as explicit motion signals, which improve motion alignment, support exaggerated expressions, and reduce identity leakage, and a fine-grained facial loss that leverages both expression and facial masks to better capture subtle expressions and faithfully preserve the reference appearance; with these components, our model supports controllable and expressive animation across diverse portrait types, including real faces, cartoons, sculptures, and animals; however, diffusion-based frameworks typically struggle to efficiently generate long-term stable animation results, which remains a core challenge in this task; to address this, we propose a progressive generation strategy for stable long-term animation and introduce a Taylor-interpolated cache, achieving a 2.6× lossless acceleration; these two strategies ensure that our method produces high-quality results efficiently, making it user-friendly and accessible; finally, we introduce EmojiBench++, a more comprehensive benchmark comprising diverse portraits, driving videos, and landmark sequences; extensive evaluations on EmojiBench++ demonstrate that Follow-Your-Emoji-Faster achieves superior performance in both animation quality and controllability.},
     bibtex_show={true},
     html={https://follow-your-emoji.github.io/},
