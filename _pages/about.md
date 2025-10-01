@@ -24,4 +24,10 @@ Beyond research, I’m deeply passionate about fishing—not just as a hobby, bu
 
 <p align="center">
   <img src="../assets/img/hongyu/antgroup.png" alt="AntGroup" height="40" style="margin: 0 10px;">
+  <img src="../assets/img/hongyu/tencent.png" alt="Tencent" height="40" style="margin: 0 10px;">
+  <img src="../assets/img/hongyu/hkust.png" alt="sensetime" height="40" style="margin: 0 10px;">
+  <img src="../assets/img/hongyu/huya.png" alt="huya" height="40" style="margin: 0 10px;">
+  <img src="../assets/img/hongyu/sensetime.png" alt="sensetime" height="40" style="margin: 0 10px;">
+  <img src="../assets/img/hongyu/huawei.png" alt="huawei" height="40" style="margin: 0 10px;">
+  <img src="../assets/img/hongyu/hnu.png" alt="hnu" height="40" style="margin: 0 10px;">
 </p>
