@@ -1,0 +1,20 @@
+- title: Happy Fishing
+  date: 2026-04-01
+  description: Three snapshots from a fishing day worth keeping.
+  album_url: https://photos.google.com/share/AF1QipOc9tl8DVd3SY_cV8RCSjHAEYwDafRdQJ7I_YN1nJfhZYscq43C4qHmDMeL6SxMpg?key=MHlqZE5ZZF9yQkhENk5FWEtzeEhlVG5ZM3N4UWxn
+  source: Google Photos
+  featured: true
+  preview_images:
+    - /assets/img/memory/fishing/fishing_1.jpeg
+    - /assets/img/memory/fishing/fishing_2.jpeg
+    - /assets/img/memory/fishing/fishing_3.jpeg
+
+- title: My Cat
+  date: 2026-04-01
+  description: Three small moments from daily life with my cat.
+  album_url: https://photos.google.com/album/AF1QipNhDJUXVldXA7vBqBxD7bG3hrbsuvQKfzlfpXwK
+  source: Google Photos
+  preview_images:
+    - /assets/img/memory/mycat/mycat_1.jpeg
+    - /assets/img/memory/mycat/mycat_2.jpeg
+    - /assets/img/memory/mycat/mycat_3.jpeg

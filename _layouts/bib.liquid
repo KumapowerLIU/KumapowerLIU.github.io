@@ -1,46 +1,72 @@
 ---
 ---
+{% assign preview_fit_class = '' %}
+{% if entry.preview_fit %}
+  {% assign preview_fit_class = entry.preview_fit | prepend: 'preview-' %}
+{% endif %}
+{% assign preview_classes = 'preview z-depth-1 rounded' %}
+{% if preview_fit_class != '' %}
+  {% assign preview_classes = preview_classes | append: ' ' | append: preview_fit_class %}
+{% endif %}
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-5 abbr">
-      {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
-          {%- endif -%}
-          <abbr
-            class="badge rounded w-100"
-            {% if venue_style %}
-              {{ venue_style }}
-            {% endif -%}
-          >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
-            {% else %}
-              <div>{{- entry.abbr -}}</div>
-            {% endif %}
-          </abbr>
-        {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+      <div class="preview-stack">
+        {%- if entry.abbr -%}
+          {%- if site.data.venues[entry.abbr] -%}
+            {% assign venue_style = null %}
+            {% if site.data.venues[entry.abbr].color != blank %}
+              {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
+            {%- endif -%}
+            <abbr
+              class="badge rounded publication-badge"
+              {% if venue_style %}
+                {{ venue_style }}
+              {% endif -%}
+            >
+              {% if site.data.venues[entry.abbr].url %}
+                <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+              {% else %}
+                <div>{{- entry.abbr -}}</div>
+              {% endif %}
+            </abbr>
+          {% else %}
+            <abbr class="badge rounded publication-badge">{{ entry.abbr }}</abbr>
+          {% endif %}
         {% endif %}
-      {% endif %}
-      {% if entry.preview %}
+        {% if entry.preview %}
         {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
-        {% else %}
-          {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
-          {%
-            include figure.liquid
-            loading="eager"
-            path=entry_path
-            sizes = "200px"
-            class="preview z-depth-1 rounded"
-            zoomable=true
-            alt=entry.preview
-          %}
+          <img class="{{ preview_classes }}" src="{{ entry.preview }}">
+        {% elsif entry.preview contains '.mp4' or entry.preview contains '.webm' or entry.preview contains '.mov' %}
+          <video
+            class="{{ preview_classes }}"
+            src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+          ></video>
+        {% elsif entry.preview contains '.gif' %}
+          <img
+            class="{{ preview_classes }}"
+            src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"
+            alt="{{ entry.preview }}"
+            loading="lazy"
+            >
+          {% else %}
+            {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+            {%
+              include figure.liquid
+              loading="eager"
+              path=entry_path
+              sizes = "200px"
+              class=preview_classes
+              alt=entry.preview
+            %}
+          {% endif %}
         {% endif %}
-      {% endif %}
+      </div>
     </div>
   {% endif %}
 
@@ -68,6 +94,11 @@
         {%- endif -%}
         {% assign coauthor_url = null %}
         {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
+        {% assign author_full_name = author.first | append: ' ' | append: author_last_name %}
+        {% assign author_project_leader = false %}
+        {% if entry.project_leader and entry.project_leader == author_full_name %}
+          {% assign author_project_leader = true %}
+        {% endif %}
         {% if site.data.coauthors[clean_last_name] %}
           {%- for coauthor in site.data.coauthors[clean_last_name] -%}
             {% if coauthor.firstname contains author.first %}
@@ -85,16 +116,19 @@
           <em>
             {{- author.first }}
             {{ author_last_html -}}
+            {%- if author_project_leader -%}<sup>&#8224;</sup>{%- endif -%}
           </em>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
               {{- author.first }}
               {{ author_last_html -}}
+              {%- if author_project_leader -%}<sup>&#8224;</sup>{%- endif -%}
             </a>
           {%- else -%}
             {{- author.first }}
             {{ author_last_html -}}
+            {%- if author_project_leader -%}<sup>&#8224;</sup>{%- endif -%}
           {% endif %}
         {%- endif -%}
       {% endfor %}

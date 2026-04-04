@@ -22,6 +22,9 @@ group :jekyll_plugins do
     gem 'webrick'
 end
 group :other_plugins do
+    gem 'benchmark'
+    gem 'observer'
+    gem 'ostruct'
     gem 'css_parser'
     gem 'feedjira'
     gem 'httparty'

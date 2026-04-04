@@ -247,6 +247,7 @@ exclude:
   - purgecss.config.js
   - README.md
   - readme_preview/
+  - assets/jupyter/
   - vendor
 keep_files:
   - CNAME
@@ -366,6 +367,9 @@ filtered_bibtex_keywords:
     pdf,
     poster,
     preview,
+    project_leader,
+    dimension,
+    recent,
     selected,
     slides,
     supp,

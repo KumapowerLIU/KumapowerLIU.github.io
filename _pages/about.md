@@ -6,10 +6,8 @@ subtitle: PhD Candidate
 
 profile:
   align: right
-  image: hongyu/japan_SteinsGate.webp
+  image: hongyu/hongyu_profile_new.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Taken at a real-life location from SteinsGate (my favorite anime).</p>
 
  
 
@@ -17,32 +15,84 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-I am a third-year (final-year) Ph.D. student in the Department of Computer Science and Engineering at The Hong Kong University of Science and Technology [HKUST](https://hkust.edu.hk/), where I am fortunate to be advised by [Prof. Qifeng Chen](https://cqf.io/).
-My research focuses on a range of topics in computer vision and graphics, including 2D/3D content generation, digital humans, neural rendering, and video generation. I am particularly interested in building intelligent systems that can understand and synthesize realistic visual content of human or avatar, bridging the gap between the physical and digital worlds.
+<section class="home-hero">
+  <div class="home-hero-copy">
+    <p class="home-kicker">Computer Vision · Graphics · Digital Humans</p>
+    <div class="home-tags">
+      <span>2D/3D Content Generation</span>
+      <span>Neural Rendering</span>
+      <span>Video Generation</span>
+      <span>Avatar Intelligence</span>
+    </div>
+    <div class="home-actions">
+      <a class="home-action primary" href="{{ '/publications/' | relative_url }}">View Publications</a>
+      <a class="home-action" href="https://scholar.google.com/citations?user=bLRjUzAAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      <a class="home-action" href="https://github.com/KumapowerLIU" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </div>
+  <aside class="home-focus-card">
+    <p class="home-focus-label">Current Focus</p>
+    <ul>
+      <li>Human-centered multimodal spatial intelligence and generation</li>
+      <li>Real-time video generation and long-form interactive avatar video generation</li>
+      <li>A closed research loop spanning 2D editing, 3D generation, and 4D interaction</li>
+    </ul>
+  </aside>
+</section>
 
-Beyond research, I’m deeply passionate about fishing—not just as a hobby, but as a personal dream. I aspire to one day travel across China to fish in its diverse rivers, lakes, and coastal waters, using the journey as a way to connect with nature, explore local cultures, and find inspiration outside the lab.
+<section class="home-bio-card">
+  <p>
+    I am a Ph.D. student in the Department of Computer Science and Engineering at The Hong
+    Kong University of Science and Technology <a href="https://hkust.edu.hk/" target="_blank" rel="noopener noreferrer">[HKUST]</a>,
+    where I am fortunate to be advised by
+    <a href="https://cqf.io/" target="_blank" rel="noopener noreferrer">[Prof. Qifeng Chen]</a>.
+  </p>
+  <p>
+    My research centers on human-centered multimodal spatial intelligence and generative algorithms. More specifically,
+    I pursue a coherent research agenda that progresses from <strong>2D spatial reconstruction and editing</strong>,
+    to <strong>3D high-fidelity static generation</strong>, and further to <strong>4D dynamic spatiotemporal interaction</strong>.
+    This forms a layered and closed-loop pipeline for understanding, reconstructing, generating, and animating realistic
+    humans and avatars across dimensions.
+  </p>
+  <p>
+    I am particularly interested in building intelligent systems that bridge vision, graphics, and generation for digital
+    humans. Recently, I have also been increasingly interested in <strong>real-time video generation</strong> and
+    <strong>long-form interactive avatar video generation</strong>, especially toward controllable, expressive, and
+    temporally coherent avatar systems.
+  </p>
+  <p>
+    Beyond research, I am deeply passionate about fishing. I hope to one day travel across China to fish in its
+    rivers, lakes, and coastal waters, using the journey to reconnect with nature, explore local cultures, and find
+    ideas outside the lab.
+  </p>
+</section>
 
-<p align="center">
-  <a href="https://www.antgroup.com/en" target="_blank">
-    <img src="../assets/img/hongyu/antgroup.png" alt="AntGroup" height="40" style="margin: 0 10px;">
-  </a>
-  <a href="https://ailab.tencent.com/ailab/en/index/" target="_blank">
-    <img src="../assets/img/hongyu/tencent.png" alt="Tencent" height="40" style="margin: 0 10px;">
-  </a>
-  <a href="https://hkust.edu.hk/" target="_blank">
-    <img src="../assets/img/hongyu/hkust.png" alt="HKUST" height="40" style="margin: 0 10px;">
-  </a>
-  <a href="https://ir.huya.com/" target="_blank">
-    <img src="../assets/img/hongyu/huya.png" alt="huya" height="40" style="margin: 0 10px;">
-  </a>
-  <a href="https://www.sensetime.com/en" target="_blank">
-    <img src="../assets/img/hongyu/sensetime2.png" alt="sensetime" height="40" style="margin: 0 10px;">
-  </a>
-  <a href="https://www.huawei.com/en/" target="_blank">
-    <img src="../assets/img/hongyu/huawei.png" alt="huawei" height="40" style="margin: 0 10px;">
-  </a>
-    <a href="https://www-en.hnu.edu.cn/" target="_blank">
-    <img src="../assets/img/hongyu/hnu.png" alt="hnu" height="40" style="margin: 0 10px;">
-  </a>
-</p>
-
+<section class="home-affiliations">
+  <p class="home-section-label">Experience & Affiliations</p>
+  <div class="home-logo-grid">
+    <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer">
+      <img src="../assets/img/hongyu/nvidia.webp" alt="NVIDIA">
+    </a>
+    <a href="https://www.antgroup.com/en" target="_blank" rel="noopener noreferrer">
+      <img src="../assets/img/hongyu/antgroup.png" alt="Ant Group">
+    </a>
+    <a href="https://ailab.tencent.com/ailab/en/index/" target="_blank" rel="noopener noreferrer">
+      <img src="../assets/img/hongyu/tencent.png" alt="Tencent">
+    </a>
+    <a href="https://hkust.edu.hk/" target="_blank" rel="noopener noreferrer">
+      <img src="../assets/img/hongyu/hkust.png" alt="HKUST">
+    </a>
+    <a href="https://ir.huya.com/" target="_blank" rel="noopener noreferrer">
+      <img src="../assets/img/hongyu/huya.png" alt="Huya">
+    </a>
+    <a href="https://www.sensetime.com/en" target="_blank" rel="noopener noreferrer">
+      <img src="../assets/img/hongyu/sensetime2.png" alt="SenseTime">
+    </a>
+    <a href="https://www.huawei.com/en/" target="_blank" rel="noopener noreferrer">
+      <img src="../assets/img/hongyu/huawei.png" alt="Huawei">
+    </a>
+    <a href="https://www-en.hnu.edu.cn/" target="_blank" rel="noopener noreferrer">
+      <img src="../assets/img/hongyu/hnu.png" alt="HNU">
+    </a>
+  </div>
+</section>

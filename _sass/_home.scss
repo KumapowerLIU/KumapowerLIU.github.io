@@ -1,0 +1,443 @@
+.homepage {
+  --home-profile-width: min(31%, 34rem);
+
+  .post-header {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding: 2.5rem;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 28px;
+    background:
+      radial-gradient(circle at top left, rgba(34, 197, 94, 0.14), transparent 30%),
+      radial-gradient(circle at top right, rgba(14, 165, 233, 0.16), transparent 28%),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(247, 250, 252, 0.98));
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+    overflow: hidden;
+  }
+
+  .post-title {
+    margin-bottom: 0.35rem;
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+  }
+
+  .desc {
+    display: inline-flex;
+    margin: 0;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid rgba(8, 145, 178, 0.14);
+    border-radius: 999px;
+    color: #0f766e;
+    background: rgba(240, 253, 250, 0.92);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .profile {
+    margin-bottom: 1.5rem;
+    width: var(--home-profile-width);
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 24px;
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18);
+    }
+
+    .more-info {
+      margin-top: 0.85rem;
+      padding: 0.9rem 1rem;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.8);
+      font-family: inherit;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+    }
+  }
+
+  .home-content {
+    margin-bottom: 2rem;
+  }
+
+  .home-hero,
+  .home-bio-card,
+  .home-affiliations,
+  .home-section {
+    position: relative;
+    padding: 1.5rem 1.6rem;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.05);
+  }
+
+  .home-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.95fr);
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+    margin-right: calc(var(--home-profile-width) + 1.6rem);
+    background:
+      linear-gradient(135deg, rgba(240, 253, 250, 0.92), rgba(255, 255, 255, 0.96)),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94));
+  }
+
+  .home-hero-copy {
+    min-width: 0;
+  }
+
+  .home-kicker,
+  .home-section-label,
+  .home-focus-label {
+    margin-bottom: 0.85rem;
+    color: #0f766e;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .home-tags,
+  .home-actions,
+  .home-logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+
+  .home-tags span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.48rem 0.82rem;
+    border-radius: 999px;
+    background: rgba(15, 118, 110, 0.08);
+    color: #134e4a;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .home-actions {
+    margin-top: 1.25rem;
+  }
+
+  .home-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.68rem 1.02rem;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    border-radius: 999px;
+    color: var(--global-text-color);
+    background: rgba(255, 255, 255, 0.86);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      transform: translateY(-1px);
+      border-color: rgba(8, 145, 178, 0.35);
+      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.08);
+    }
+
+    &.primary {
+      color: #ffffff;
+      background: linear-gradient(135deg, #0f766e, #0891b2);
+      border-color: transparent;
+    }
+  }
+
+  .home-focus-card {
+    padding: 1.2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(8, 145, 178, 0.14);
+    background:
+      linear-gradient(160deg, rgba(236, 253, 245, 0.96), rgba(207, 250, 254, 0.96)),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94));
+    color: rgba(15, 23, 42, 0.9);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+    ul {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+
+    li + li {
+      margin-top: 0.55rem;
+    }
+  }
+
+  .home-focus-label {
+    color: #155e75;
+  }
+
+  .home-focus-card ul li {
+    line-height: 1.6;
+  }
+
+  .home-bio-card,
+  .home-affiliations {
+    margin-bottom: 1.25rem;
+  }
+
+  .home-bio-card,
+  .home-affiliations,
+  .home-section {
+    clear: both;
+  }
+
+  .home-bio-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .home-logo-grid a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    min-height: 68px;
+    padding: 0.9rem 1.15rem;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.98);
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      border-color: rgba(8, 145, 178, 0.28);
+      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
+    }
+  }
+
+  .home-logo-grid img {
+    width: auto;
+    max-width: 104px;
+    max-height: 34px;
+    object-fit: contain;
+    filter: saturate(0.98) contrast(1.02);
+  }
+
+  .home-section {
+    margin-bottom: 1.5rem;
+
+    > h2 {
+      margin-bottom: 1rem;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  .news .table {
+    margin-bottom: 0;
+  }
+
+  .news .table th,
+  .news .table td {
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+    border-color: rgba(15, 23, 42, 0.06);
+  }
+
+  .publications {
+    margin-top: 0;
+  }
+
+  .publications ol.bibliography li {
+    margin-bottom: 1.15rem;
+    padding: 1.2rem;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.95));
+  }
+
+  .home-section .publications ol.bibliography li .row {
+    display: grid;
+    grid-template-columns: minmax(280px, 36%) minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: center;
+    margin: 0;
+  }
+
+  .home-section .publications ol.bibliography li .abbr,
+  .home-section .publications ol.bibliography li [id] {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+    padding: 0;
+  }
+
+  .home-section .publications ol.bibliography li [id] {
+    min-width: 0;
+  }
+
+  .home-section .publications ol.bibliography li .abbr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 0;
+  }
+
+  .home-section .publications ol.bibliography li .abbr .preview {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 6;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 16px !important;
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  .home-section .publications ol.bibliography li .title,
+  .home-section .publications ol.bibliography li .author,
+  .home-section .publications ol.bibliography li .periodical {
+    overflow-wrap: anywhere;
+  }
+
+  .home-section .publications ol.bibliography li .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.55rem;
+    margin-top: 0.9rem;
+  }
+
+  .social .contact-icons {
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+  }
+
+  .social .contact-note {
+    margin-top: 0.8rem;
+  }
+}
+
+html[data-theme="dark"] {
+  .homepage {
+    .post-header,
+    .home-hero,
+    .home-bio-card,
+    .home-affiliations,
+    .home-section {
+      border-color: rgba(148, 163, 184, 0.15);
+      background:
+        linear-gradient(180deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.94)),
+        linear-gradient(180deg, rgba(15, 23, 42, 0.94), rgba(15, 23, 42, 0.94));
+      box-shadow: 0 20px 45px rgba(2, 6, 23, 0.28);
+    }
+
+    .post-header {
+      background:
+        radial-gradient(circle at top left, rgba(20, 184, 166, 0.16), transparent 28%),
+        radial-gradient(circle at top right, rgba(14, 165, 233, 0.2), transparent 24%),
+        linear-gradient(180deg, rgba(30, 41, 59, 0.98), rgba(15, 23, 42, 0.96));
+    }
+
+    .desc,
+    .home-tags span {
+      color: #99f6e4;
+      background: rgba(13, 148, 136, 0.16);
+      border-color: rgba(45, 212, 191, 0.16);
+    }
+
+    .profile .more-info,
+    .home-action,
+    .home-logo-grid a,
+    .publications ol.bibliography li {
+      border-color: rgba(148, 163, 184, 0.14);
+      background: rgba(30, 41, 59, 0.82);
+      box-shadow: none;
+    }
+
+    .home-action.primary {
+      color: #ecfeff;
+      background: linear-gradient(135deg, #0f766e, #0284c7);
+    }
+
+    .home-focus-card {
+      border-color: rgba(45, 212, 191, 0.18);
+      background:
+        linear-gradient(160deg, rgba(236, 253, 245, 0.96), rgba(207, 250, 254, 0.96)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94));
+      color: rgba(15, 23, 42, 0.9);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45);
+    }
+
+    .home-focus-card li {
+      color: rgba(15, 23, 42, 0.9);
+    }
+
+    .home-focus-card li::marker {
+      color: rgba(15, 23, 42, 0.55);
+    }
+
+    .home-focus-label {
+      color: #155e75;
+    }
+
+    .home-kicker,
+    .home-section-label {
+      color: #5eead4;
+    }
+
+    .news .table th,
+    .news .table td {
+      border-color: rgba(148, 163, 184, 0.08);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .homepage {
+    .profile {
+      width: 100%;
+
+      img {
+        height: auto;
+        max-height: none;
+      }
+    }
+
+    .post-header {
+      padding: 1.5rem;
+      border-radius: 22px;
+    }
+
+    .home-hero {
+      grid-template-columns: 1fr;
+      margin-right: 0;
+    }
+
+    .home-hero,
+    .home-bio-card,
+    .home-affiliations,
+    .home-section {
+      padding: 1.15rem;
+      border-radius: 20px;
+    }
+
+    .home-logo-grid a {
+      min-width: calc(50% - 0.35rem);
+      flex: 1 1 calc(50% - 0.35rem);
+    }
+
+    .home-section .publications ol.bibliography li .row {
+      grid-template-columns: 1fr;
+    }
+
+    .home-section .publications ol.bibliography li .abbr .preview {
+      aspect-ratio: 16 / 7;
+    }
+  }
+}

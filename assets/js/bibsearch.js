@@ -1,6 +1,8 @@
 import { highlightSearchTerm } from "./highlight-search-term.js";
 
 document.addEventListener("DOMContentLoaded", function () {
+  const reservedHashes = new Set(["full", "selected", "2d", "3d", "4d"]);
+
   // actual bibsearch logic
   const filterItems = (searchTerm) => {
     document.querySelectorAll(".bibliography, .unloaded").forEach((element) => element.classList.remove("unloaded"));
@@ -52,8 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const updateInputField = () => {
     const hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
-    document.getElementById("bibsearch").value = hashValue;
-    filterItems(hashValue);
+    const normalizedHash = reservedHashes.has(hashValue.toLowerCase()) ? "" : hashValue;
+    document.getElementById("bibsearch").value = normalizedHash;
+    filterItems(normalizedHash);
   };
 
   // Sensitive search. Only start searching if there's been no input for 300 ms
