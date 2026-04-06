@@ -6,7 +6,7 @@ subtitle: PhD Candidate
 
 profile:
   align: right
-  image: hongyu/hongyu_profile_new.jpg
+  image: hongyu/hongyu_profile_new.webp
   image_circular: false # crops the image to make it circular
 
  
