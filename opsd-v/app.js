@@ -224,7 +224,7 @@ function setupSynchronizedVideos(card) {
       if (Math.abs(peer.currentTime - video.currentTime) > 0.2) peer.currentTime = video.currentTime;
       try {
         await peer.play();
-      } catch {
+      } catch (error) {
         // The browser can block programmatic playback until the second video is loaded.
       }
       syncing = false;
@@ -260,9 +260,12 @@ function setupAblationVideos() {
       const caseCard = button.closest(".ablation-video-case");
       const videos = [...caseCard.querySelectorAll("video")];
       const labels = [...caseCard.querySelectorAll(".video-label")].map((label) => label.textContent.trim());
-      const sectionTitle = button.closest(".ablation-card").querySelector(".ablation-card-heading strong")?.textContent.trim();
-      const caseTitle = caseCard.querySelector("h3")?.textContent.trim();
-      const caseKicker = caseCard.querySelector(".ablation-video-case-head span")?.textContent.trim();
+      const sectionTitleEl = button.closest(".ablation-card").querySelector(".ablation-card-heading strong");
+      const caseTitleEl = caseCard.querySelector("h3");
+      const caseKickerEl = caseCard.querySelector(".ablation-video-case-head span");
+      const sectionTitle = sectionTitleEl ? sectionTitleEl.textContent.trim() : "";
+      const caseTitle = caseTitleEl ? caseTitleEl.textContent.trim() : "";
+      const caseKicker = caseKickerEl ? caseKickerEl.textContent.trim() : "";
       openVideoComparison({
         kicker: caseKicker || "Ablation",
         title: formatComparisonTitle(sectionTitle, caseTitle),
@@ -276,7 +279,7 @@ function setupAblationVideos() {
 }
 
 function formatComparisonTitle(sectionTitle, caseTitle) {
-  const cleanSection = sectionTitle?.replace(/[.。]+$/u, "");
+  const cleanSection = sectionTitle ? sectionTitle.replace(/[.。]+$/u, "") : "";
   return [cleanSection, caseTitle].filter(Boolean).join(" — ");
 }
 
@@ -520,7 +523,8 @@ function openComparison(item) {
 }
 
 function getVideoSource(video) {
-  return video?.currentSrc || video?.src || video?.dataset.src || "";
+  if (!video) return "";
+  return video.currentSrc || video.src || video.dataset.src || "";
 }
 
 function openVideoComparison({ kicker, title, leftLabel, rightLabel, leftVideo, rightVideo }) {
@@ -616,7 +620,7 @@ async function copyText(text, button) {
   try {
     await navigator.clipboard.writeText(text);
     button.textContent = "Copied";
-  } catch {
+  } catch (error) {
     button.textContent = "Select and copy";
   }
   window.setTimeout(() => {
