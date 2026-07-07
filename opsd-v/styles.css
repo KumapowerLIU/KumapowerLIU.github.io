@@ -494,11 +494,28 @@ button {
 }
 
 .nav-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   color: var(--navy);
   font-family: "Newsreader", serif;
   font-size: 1.4rem;
   font-weight: 700;
   text-decoration: none;
+}
+
+.nav-mark img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(24, 55, 47, 0.13);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.nav-mark:hover img {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(24, 55, 47, 0.18);
 }
 
 .nav-links {
@@ -1732,11 +1749,19 @@ tbody tr.is-ours .method-cell {
   }
 
   .nav-mark {
-    display: none;
+    flex: 0 0 auto;
+    gap: 7px;
+    font-size: 1.18rem;
+  }
+
+  .nav-mark img {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
   }
 
   .nav-links {
-    width: 100%;
+    min-width: 0;
     margin: 0;
     gap: 20px;
   }
