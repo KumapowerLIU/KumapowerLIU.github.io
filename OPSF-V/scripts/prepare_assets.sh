@@ -3,7 +3,7 @@ set -euo pipefail
 
 ROOT="/mnt/dolphinfs/ssd_pool/docker/user/hadoop-videogen-hl/hadoop-camera3d/hongyuliu"
 OUTPUT="$ROOT/LongLive-main/output"
-SITE="$ROOT/opsd-v/projectpage"
+SITE="$ROOT/OPSF-V/projectpage"
 
 mkdir -p "$SITE/assets/videos" "$SITE/assets/posters"
 

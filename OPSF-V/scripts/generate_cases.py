@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path("/mnt/dolphinfs/ssd_pool/docker/user/hadoop-videogen-hl/hadoop-camera3d/hongyuliu")
 OUTPUT = ROOT / "LongLive-main/output"
-SITE = ROOT / "opsd-v/projectpage"
+SITE = ROOT / "OPSF-V/projectpage"
 
 PROMPT_FILES = {
     "MeiBench": ROOT / "dataset_longvideo_all/holdout_prompts_20_per_root.txt",
