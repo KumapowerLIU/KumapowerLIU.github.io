@@ -496,26 +496,38 @@ button {
 .nav-mark {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: 14px;
+  flex: 0 0 auto;
   color: var(--navy);
-  font-family: "Newsreader", serif;
-  font-size: 1.4rem;
-  font-weight: 700;
   text-decoration: none;
 }
 
-.nav-mark img {
-  width: 34px;
-  height: 34px;
+.nav-logo {
+  display: block;
+  width: auto;
   object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(24, 55, 47, 0.13);
-  transition: transform 160ms ease, box-shadow 160ms ease;
+  filter: saturate(0.96);
+  transition: opacity 160ms ease, transform 160ms ease;
 }
 
-.nav-mark:hover img {
+.nav-mark:hover .nav-logo {
+  opacity: 0.78;
   transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(24, 55, 47, 0.18);
+}
+
+.nav-logo-meituan {
+  height: 34px;
+  max-width: 150px;
+}
+
+.nav-logo-hkust {
+  height: 39px;
+  max-width: 112px;
+}
+
+.nav-logo-cityu {
+  height: 34px;
+  max-width: 82px;
 }
 
 .nav-links {
@@ -1750,14 +1762,22 @@ tbody tr.is-ours .method-cell {
 
   .nav-mark {
     flex: 0 0 auto;
-    gap: 7px;
-    font-size: 1.18rem;
+    gap: 9px;
   }
 
-  .nav-mark img {
-    width: 28px;
-    height: 28px;
-    border-radius: 8px;
+  .nav-logo-meituan {
+    height: 27px;
+    max-width: 112px;
+  }
+
+  .nav-logo-hkust {
+    height: 30px;
+    max-width: 80px;
+  }
+
+  .nav-logo-cityu {
+    height: 26px;
+    max-width: 60px;
   }
 
   .nav-links {

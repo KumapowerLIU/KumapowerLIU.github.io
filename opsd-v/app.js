@@ -1,4 +1,4 @@
-import { bibtex, categoryMeta, metrics, project } from "./data.js?v=20260707-author-links";
+import { bibtex, categoryMeta, metrics, project } from "./data.js?v=20260708-affiliation-order";
 import { cases } from "./cases.generated.js?v=20260706-readable-titles";
 
 const PAGE_SIZE = 6;
