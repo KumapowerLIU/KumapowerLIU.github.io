@@ -2,7 +2,7 @@ export const project = {
   title: "OPSD-V",
   subtitle: "On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators",
   venue: "Project Page",
-  paperUrl: "/OPSF-V/assets/opsdv.pdf",
+  paperUrl: "assets/opsdv.pdf",
   codeUrl: "#code",
   authors: [
     { name: "Hongyu Liu", affiliations: [1, 2], url: "https://kumapowerliu.github.io/" },

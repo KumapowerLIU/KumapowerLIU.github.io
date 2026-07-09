@@ -184,7 +184,7 @@ function makeCard(item) {
       <div class="video-cell">
         <span class="video-label">Base</span>
         <video muted loop playsinline controls preload="none"
-          poster="${item.basePoster || `/OPSF-V/assets/posters/${item.slug}-base.jpg`}"
+          poster="${item.basePoster || `assets/posters/${item.slug}-base.jpg`}"
           data-src="${baseVideo}"
           aria-label="${escapeHtml(item.backbone)} base result for ${escapeHtml(item.title)}"></video>
         <span class="video-status">1 min</span>
@@ -192,7 +192,7 @@ function makeCard(item) {
       <div class="video-cell is-ours">
         <span class="video-label">+ OPSD-V</span>
         <video muted loop playsinline controls preload="none"
-          poster="${item.oursPoster || `/OPSF-V/assets/posters/${item.slug}-opsdv.jpg`}"
+          poster="${item.oursPoster || `assets/posters/${item.slug}-opsdv.jpg`}"
           data-src="${oursVideo}"
           aria-label="${escapeHtml(item.backbone)} with OPSD-V for ${escapeHtml(item.title)}"></video>
         <span class="video-status">1 min</span>
