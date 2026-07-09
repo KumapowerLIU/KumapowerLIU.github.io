@@ -6,7 +6,7 @@
   <meta name="description" content="OPSD-V is a cache-aware on-policy self-distillation framework for post-training few-step autoregressive video generators.">
   <meta name="theme-color" content="#f4efe4">
   <title>OPSD-V | On-Policy Self-Distillation for Post-Training Few-Step AR Video Generators</title>
-  <link rel="icon" type="image/png" href="assets/images/opsdv-favicon.png">
+  <link rel="icon" type="image/png" href="/OPSF-V/assets/images/opsdv-favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,9 +18,9 @@
   <nav class="section-nav" aria-label="Project page sections">
     <div class="shell nav-inner">
       <a class="nav-mark" href="#top" aria-label="Back to top">
-        <img class="nav-logo nav-logo-meituan" src="assets/images/institutions/meigen-logo.svg" alt="Meituan MeiGen">
-        <img class="nav-logo nav-logo-hkust" src="assets/images/institutions/hkust.svg" alt="HKUST">
-        <img class="nav-logo nav-logo-cityu" src="assets/images/institutions/cityu.png" alt="City University of Hong Kong">
+        <img class="nav-logo nav-logo-meituan" src="/OPSF-V/assets/images/institutions/meigen-logo.svg" alt="Meituan MeiGen">
+        <img class="nav-logo nav-logo-hkust" src="/OPSF-V/assets/images/institutions/hkust.svg" alt="HKUST">
+        <img class="nav-logo nav-logo-cityu" src="/OPSF-V/assets/images/institutions/cityu.png" alt="City University of Hong Kong">
       </a>
       <div class="nav-links">
         <a href="#results">Results</a>
@@ -136,7 +136,7 @@
           </div>
         </div>
         <figure class="paper-figure paper-figure-overview">
-          <img src="assets/images/overview.jpg" alt="Overview of OPSD-V and a training-free KV-cache intervention on LongLive." loading="lazy">
+          <img src="/OPSF-V/assets/images/overview.jpg" alt="Overview of OPSD-V and a training-free KV-cache intervention on LongLive." loading="lazy">
           <figcaption>The lower panel isolates the role of temporal context without any additional training. Both LongLive rollouts use the same model and begin from the same real-video first chunk. In the second row, only older KV-cache history is replaced by context from the corresponding real video, while the most recent chunk remains model-generated to preserve autoregressive continuation. Its immediate improvement shows that accumulated cache degradation, rather than the initial condition alone, is a major source of long-horizon failure.</figcaption>
         </figure>
       </div>
@@ -147,7 +147,7 @@
         <h2 class="section-title">Method</h2>
         <p class="section-intro">The student follows the exact deployment rollout. At each denoising state it visits, the teacher provides a corrective velocity target from a cleaner temporal context without replacing the student's trajectory.</p>
         <figure class="pipeline-figure">
-          <img src="assets/images/pipeline.png" alt="Pipeline of OPSD-V cache-aware on-policy self-distillation." loading="lazy">
+          <img src="/OPSF-V/assets/images/pipeline.png" alt="Pipeline of OPSD-V cache-aware on-policy self-distillation." loading="lazy">
         </figure>
         <div class="method-steps">
           <article>
@@ -295,15 +295,15 @@
                   <div class="video-cell">
                     <span class="video-label"><i>x</i><sub>0</sub> Loss</span>
                     <video muted loop playsinline controls preload="none"
-                      poster="assets/videos/ablations/loss-target-bridge-construction-x0.jpg"
-                      data-src="assets/videos/ablations/loss-target-bridge-construction-x0.mp4?v=h264-25s"
+                      poster="/OPSF-V/assets/videos/ablations/loss-target-bridge-construction-x0.jpg"
+                      data-src="/OPSF-V/assets/videos/ablations/loss-target-bridge-construction-x0.mp4?v=h264-25s"
                       aria-label="Bridge construction result trained with x0 loss"></video>
                   </div>
                   <div class="video-cell is-ours">
                     <span class="video-label">Velocity Loss</span>
                     <video muted loop playsinline controls preload="none"
-                      poster="assets/videos/ablations/loss-target-bridge-construction-velocity.jpg"
-                      data-src="assets/videos/ablations/loss-target-bridge-construction-velocity.mp4?v=h264-25s"
+                      poster="/OPSF-V/assets/videos/ablations/loss-target-bridge-construction-velocity.jpg"
+                      data-src="/OPSF-V/assets/videos/ablations/loss-target-bridge-construction-velocity.mp4?v=h264-25s"
                       aria-label="Bridge construction result trained with velocity loss"></video>
                   </div>
                 </div>
@@ -322,15 +322,15 @@
                   <div class="video-cell">
                     <span class="video-label"><i>x</i><sub>0</sub> Loss</span>
                     <video muted loop playsinline controls preload="none"
-                      poster="assets/videos/ablations/loss-target-train-bridge-x0.jpg"
-                      data-src="assets/videos/ablations/loss-target-train-bridge-x0.mp4?v=h264-25s"
+                      poster="/OPSF-V/assets/videos/ablations/loss-target-train-bridge-x0.jpg"
+                      data-src="/OPSF-V/assets/videos/ablations/loss-target-train-bridge-x0.mp4?v=h264-25s"
                       aria-label="Train bridge result trained with x0 loss"></video>
                   </div>
                   <div class="video-cell is-ours">
                     <span class="video-label">Velocity Loss</span>
                     <video muted loop playsinline controls preload="none"
-                      poster="assets/videos/ablations/loss-target-train-bridge-velocity.jpg"
-                      data-src="assets/videos/ablations/loss-target-train-bridge-velocity.mp4?v=h264-25s"
+                      poster="/OPSF-V/assets/videos/ablations/loss-target-train-bridge-velocity.jpg"
+                      data-src="/OPSF-V/assets/videos/ablations/loss-target-train-bridge-velocity.mp4?v=h264-25s"
                       aria-label="Train bridge result trained with velocity loss"></video>
                   </div>
                 </div>
@@ -360,15 +360,15 @@
                   <div class="video-cell">
                     <span class="video-label">Student</span>
                     <video muted loop playsinline controls preload="none"
-                      poster="assets/videos/ablations/trajectory-step056-student.jpg"
-                      data-src="assets/videos/ablations/trajectory-step056-student.mp4?v=5s"
+                      poster="/OPSF-V/assets/videos/ablations/trajectory-step056-student.jpg"
+                      data-src="/OPSF-V/assets/videos/ablations/trajectory-step056-student.mp4?v=5s"
                       aria-label="Student rollout at training debug step 56"></video>
                   </div>
                   <div class="video-cell is-ours">
                     <span class="video-label">Teacher</span>
                     <video muted loop playsinline controls preload="none"
-                      poster="assets/videos/ablations/trajectory-step056-teacher.jpg"
-                      data-src="assets/videos/ablations/trajectory-step056-teacher.mp4?v=5s"
+                      poster="/OPSF-V/assets/videos/ablations/trajectory-step056-teacher.jpg"
+                      data-src="/OPSF-V/assets/videos/ablations/trajectory-step056-teacher.mp4?v=5s"
                       aria-label="Teacher rollout at training debug step 56"></video>
                   </div>
                 </div>
@@ -387,15 +387,15 @@
                   <div class="video-cell">
                     <span class="video-label">Student</span>
                     <video muted loop playsinline controls preload="none"
-                      poster="assets/videos/ablations/trajectory-step080-student.jpg"
-                      data-src="assets/videos/ablations/trajectory-step080-student.mp4?v=5s"
+                      poster="/OPSF-V/assets/videos/ablations/trajectory-step080-student.jpg"
+                      data-src="/OPSF-V/assets/videos/ablations/trajectory-step080-student.mp4?v=5s"
                       aria-label="Student rollout at training debug step 80"></video>
                   </div>
                   <div class="video-cell is-ours">
                     <span class="video-label">Teacher</span>
                     <video muted loop playsinline controls preload="none"
-                      poster="assets/videos/ablations/trajectory-step080-teacher.jpg"
-                      data-src="assets/videos/ablations/trajectory-step080-teacher.mp4?v=5s"
+                      poster="/OPSF-V/assets/videos/ablations/trajectory-step080-teacher.jpg"
+                      data-src="/OPSF-V/assets/videos/ablations/trajectory-step080-teacher.mp4?v=5s"
                       aria-label="Teacher rollout at training debug step 80"></video>
                   </div>
                 </div>
