@@ -6,7 +6,21 @@
     {% endif %}
   >
     <div class="card h-100 hoverable">
-      {% if project.img %}
+      {% if project.video %}
+        <video
+          class="card-img-top project-card-video"
+          src="{{ project.video | relative_url }}"
+          {% if project.img %}
+            poster="{{ project.img | relative_url }}"
+          {% endif %}
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-label="{{ project.title }} video preview"
+        ></video>
+      {% elsif project.img %}
         {% if project.img contains '.gif' %}
           <img
             class="card-img-top"

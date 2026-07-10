@@ -62,7 +62,14 @@ layout: default
     {% if page.selected_papers %}
       <section class="home-section">
         <h2>
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Recent Highlights</a>
+          <a href="{{ '/projects/' | relative_url }}" style="color: inherit">Recent Highlights</a>
+        </h2>
+        {% include recent_highlights.liquid %}
+      </section>
+
+      <section class="home-section">
+        <h2>
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Recent Publications</a>
         </h2>
         {% include selected_papers.liquid %}
       </section>

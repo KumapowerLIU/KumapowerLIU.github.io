@@ -76,6 +76,9 @@ social: true # includes social icons at the bottom of the page
     <a href="https://www.antgroup.com/en" target="_blank" rel="noopener noreferrer">
       <img src="../assets/img/hongyu/antgroup.png" alt="Ant Group">
     </a>
+    <a href="https://about.meituan.com/en" target="_blank" rel="noopener noreferrer">
+      <img src="../assets/img/hongyu/meituan.png" alt="Meituan">
+    </a>
     <a href="https://ailab.tencent.com/ailab/en/index/" target="_blank" rel="noopener noreferrer">
       <img src="../assets/img/hongyu/tencent.png" alt="Tencent">
     </a>
@@ -87,9 +90,6 @@ social: true # includes social icons at the bottom of the page
     </a>
     <a href="https://www.sensetime.com/en" target="_blank" rel="noopener noreferrer">
       <img src="../assets/img/hongyu/sensetime2.png" alt="SenseTime">
-    </a>
-    <a href="https://www.huawei.com/en/" target="_blank" rel="noopener noreferrer">
-      <img src="../assets/img/hongyu/huawei.png" alt="Huawei">
     </a>
     <a href="https://www-en.hnu.edu.cn/" target="_blank" rel="noopener noreferrer">
       <img src="../assets/img/hongyu/hnu.png" alt="HNU">

@@ -2,12 +2,28 @@
   <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
     <div class="card h-100 hoverable">
       <div class="row no-gutters">
-        {% if project.img %}
+        {% if project.video %}
+          <div class="col-md-6">
+            <video
+              class="card-img project-card-video"
+              src="{{ project.video | relative_url }}"
+              {% if project.img %}
+                poster="{{ project.img | relative_url }}"
+              {% endif %}
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="{{ project.title }} video preview"
+            ></video>
+          </div>
+        {% elsif project.img %}
           <div class="col-md-6">
             {% include figure.liquid loading="eager" path=project.img sizes="(min-width: 768px) 156px, 50vw" alt="project thumbnail" class="card-img" %}
           </div>
         {% endif %}
-        <div class="{% if project.img %}col-md-6{% else %}col-md-12{% endif %}">
+        <div class="{% if project.img or project.video %}col-md-6{% else %}col-md-12{% endif %}">
           <div class="card-body">
             <h3 class="card-title">{{ project.title }}</h3>
             <p class="card-text">{{ project.description }}</p>
