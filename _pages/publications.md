@@ -49,7 +49,7 @@ nav_order: 2
     <button type="button" class="publication-category-chip is-active" data-target="selected">Selected</button>
     <button type="button" class="publication-category-chip" data-target="2d">2D Reconstruction & Editing</button>
     <button type="button" class="publication-category-chip" data-target="3d">3D Static Generation</button>
-    <button type="button" class="publication-category-chip" data-target="4d">4D Dynamic Avatarization</button>
+    <button type="button" class="publication-category-chip" data-target="4d">4D Generation</button>
   </section>
 
   <div class="publications publications-collection" data-category="full">
@@ -73,7 +73,7 @@ nav_order: 2
   </div>
 
   <div class="publications publications-collection" data-category="4d">
-    <h2 class="bibliography">4D Dynamic Avatarization</h2>
+    <h2 class="bibliography">4D Generation</h2>
     {% bibliography --group_by year --query @*[dimension=4d]* %}
   </div>
 
