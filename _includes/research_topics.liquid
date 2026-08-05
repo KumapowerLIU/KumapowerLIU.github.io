@@ -1,0 +1,72 @@
+<section class="home-research-topics" aria-labelledby="research-topics-title">
+  <div class="home-topics-heading">
+    <div>
+      <p class="home-section-label">Research Map</p>
+      <h2 id="research-topics-title">Highlighted Research Topics</h2>
+      <p>
+        Three connected directions: image generation and editing, human-centered multimodal spatial intelligence,
+        and video generation with generative world models.
+      </p>
+    </div>
+    <a class="home-topics-all" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a>
+  </div>
+
+  <div class="home-topics-grid">
+    <a class="home-topic-card" href="{{ '/publications/' | relative_url }}?category=2d">
+      <div class="home-topic-visual">
+        <img
+          src="{{ '/assets/img/research_topics/2d-spatial-editing.webp' | relative_url }}"
+          alt="Conceptual visualization of image generation and editing"
+          width="1400"
+          height="820"
+          loading="lazy"
+        >
+      </div>
+      <div class="home-topic-body">
+        <div class="home-topic-title-row">
+          <h3>Image Generation &amp; Editing</h3>
+          <span class="home-topic-arrow" aria-hidden="true">↗</span>
+        </div>
+        <p>Controllable image synthesis and editing, spatial reconstruction, motion transfer, and content-aware generation.</p>
+      </div>
+    </a>
+
+    <a class="home-topic-card" href="{{ '/publications/' | relative_url }}?category=3d">
+      <div class="home-topic-visual">
+        <img
+          src="{{ '/assets/img/research_topics/3d-generation.webp' | relative_url }}"
+          alt="Conceptual visualization of human-centered multimodal spatial intelligence"
+          width="1400"
+          height="820"
+          loading="lazy"
+        >
+      </div>
+      <div class="home-topic-body">
+        <div class="home-topic-title-row">
+          <h3>Human-Centered Spatial Intelligence</h3>
+          <span class="home-topic-arrow" aria-hidden="true">↗</span>
+        </div>
+        <p>Multimodal understanding and generation for digital humans and avatars, with controllable appearance, geometry, motion, and interaction.</p>
+      </div>
+    </a>
+
+    <a class="home-topic-card home-topic-card--wide" href="{{ '/publications/' | relative_url }}?category=4d">
+      <div class="home-topic-visual">
+        <img
+          src="{{ '/assets/img/research_topics/video-generation-v2.webp' | relative_url }}"
+          alt="Conceptual visualization of video generation across space and time"
+          width="1400"
+          height="820"
+          loading="lazy"
+        >
+      </div>
+      <div class="home-topic-body">
+        <div class="home-topic-title-row">
+          <h3>Video Generation &amp; World Models</h3>
+          <span class="home-topic-arrow" aria-hidden="true">↗</span>
+        </div>
+        <p>Video generation, interactive world models, temporally coherent scene evolution, and controllable visual simulation.</p>
+      </div>
+    </a>
+  </div>
+</section>

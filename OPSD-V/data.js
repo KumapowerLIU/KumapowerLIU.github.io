@@ -178,11 +178,9 @@ export const metrics = [
   { method: "Self-Forcing + OPSD-V", params: "1.3B", nfe: "4", quality: "0.8389", dynamics: "0.6570", semantic: "0.4864", userPreference: "--", best: ["quality", "dynamics"], ours: true },
 ];
 
-export const bibtex = `@article{liu2026opsdv,
-  title   = {OPSD-V: On-Policy Self-Distillation for Post-Training
-             Few-Step Autoregressive Video Generators},
-  author  = {Liu, Hongyu and Wang, Chun and Gao, Feng and He, Xuanhua
-             and Ma, Yue and Wan, Ziyu and Zhang, Yong and Wei, Xiaoming
-             and Chen, Qifeng},
-  year    = {2026}
+export const bibtex = `@article{liu2026opsd,
+  title={OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators},
+  author={Liu, Hongyu and Wang, Chun and Gao, Feng and He, Xuanhua and Ma, Yue and Wan, Ziyu and Zhang, Yong and Wei, Xiaoming and Chen, Qifeng},
+  journal={arXiv preprint arXiv:2607.08766},
+  year={2026}
 }`;

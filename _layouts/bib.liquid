@@ -4,9 +4,18 @@
 {% if entry.preview_fit %}
   {% assign preview_fit_class = entry.preview_fit | prepend: 'preview-' %}
 {% endif %}
-{% assign preview_classes = 'preview z-depth-1 rounded' %}
+{% assign preview_media_class = 'preview-figure' %}
+{% if entry.preview contains '.mp4' or entry.preview contains '.webm' or entry.preview contains '.mov' or entry.preview contains '.gif' %}
+  {% assign preview_media_class = 'preview-motion' %}
+{% endif %}
+{% assign preview_classes = 'preview z-depth-1 rounded ' | append: preview_media_class %}
 {% if preview_fit_class != '' %}
   {% assign preview_classes = preview_classes | append: ' ' | append: preview_fit_class %}
+{% endif %}
+{% assign publication_badge_classes = 'badge rounded publication-badge' %}
+{% assign honor_abbrs = 'Highlight,Oral,Spotlight' | split: ',' %}
+{% if honor_abbrs contains entry.abbr %}
+  {% assign publication_badge_classes = publication_badge_classes | append: ' publication-badge--honor' %}
 {% endif %}
 <div class="row">
   {% if site.enable_publication_thumbnails %}
@@ -19,7 +28,7 @@
               {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
             {%- endif -%}
             <abbr
-              class="badge rounded publication-badge"
+              class="{{ publication_badge_classes }}"
               {% if venue_style %}
                 {{ venue_style }}
               {% endif -%}
@@ -31,12 +40,12 @@
               {% endif %}
             </abbr>
           {% else %}
-            <abbr class="badge rounded publication-badge">{{ entry.abbr }}</abbr>
+            <abbr class="{{ publication_badge_classes }}">{{ entry.abbr }}</abbr>
           {% endif %}
         {% endif %}
         {% if entry.preview %}
         {% if entry.preview contains '://' %}
-          <img class="{{ preview_classes }}" src="{{ entry.preview }}">
+          <img class="{{ preview_classes }}" src="{{ entry.preview }}" alt="{{ entry.title | escape }}" loading="lazy">
         {% elsif entry.preview contains '.mp4' or entry.preview contains '.webm' or entry.preview contains '.mov' %}
           <video
             class="{{ preview_classes }}"
@@ -45,7 +54,7 @@
             muted
             loop
             playsinline
-            preload="auto"
+            preload="metadata"
           ></video>
         {% elsif entry.preview contains '.gif' %}
           <img
@@ -58,7 +67,7 @@
             {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
             {%
               include figure.liquid
-              loading="eager"
+              loading="lazy"
               path=entry_path
               sizes = "200px"
               class=preview_classes

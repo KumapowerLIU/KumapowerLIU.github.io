@@ -2,7 +2,8 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: 
+description:
+hide_title: true
 nav: true
 nav_order: 2
 ---
@@ -14,9 +15,16 @@ nav_order: 2
     <p class="publication-kicker">Research Output</p>
     <h1>Publications</h1>
     <p class="publication-intro">
-      A curated record of recent work across computer vision, multimedia understanding, and efficient AI systems.
-      Use the search box to filter by topic, venue, or collaborator.
+      A research record spanning image generation and editing, human-centered multimodal spatial intelligence,
+      and video generation with generative world models. Search by topic, venue, year, or collaborator.
     </p>
+    <div class="publication-pathway" aria-label="Research themes across image generation, spatial intelligence, and video generation">
+      <span>Image Generation &amp; Editing</span>
+      <i aria-hidden="true">→</i>
+      <span>Human-Centered Spatial Intelligence</span>
+      <i aria-hidden="true">→</i>
+      <span>Video Generation &amp; World Models</span>
+    </div>
     <div class="publication-meta">
       <div class="publication-note">
         <span class="label">Contribution note</span>
@@ -47,9 +55,9 @@ nav_order: 2
   <section class="publication-categories-nav" aria-label="Publication categories">
     <button type="button" class="publication-category-chip" data-target="full">Full</button>
     <button type="button" class="publication-category-chip is-active" data-target="selected">Selected</button>
-    <button type="button" class="publication-category-chip" data-target="2d">2D Reconstruction & Editing</button>
-    <button type="button" class="publication-category-chip" data-target="3d">3D Static Generation</button>
-    <button type="button" class="publication-category-chip" data-target="4d">4D Generation</button>
+    <button type="button" class="publication-category-chip" data-target="2d">Image Generation &amp; Editing</button>
+    <button type="button" class="publication-category-chip" data-target="3d">Human-Centered Spatial Intelligence</button>
+    <button type="button" class="publication-category-chip" data-target="4d">Video Generation &amp; World Models</button>
   </section>
 
   <div class="publications publications-collection" data-category="full">
@@ -63,17 +71,17 @@ nav_order: 2
   </div>
 
   <div class="publications publications-collection" data-category="2d">
-    <h2 class="bibliography">2D Reconstruction & Editing</h2>
+    <h2 class="bibliography">Image Generation &amp; Editing</h2>
     {% bibliography --group_by year --query @*[dimension=2d]* %}
   </div>
 
   <div class="publications publications-collection" data-category="3d">
-    <h2 class="bibliography">3D Static Generation</h2>
+    <h2 class="bibliography">Human-Centered Spatial Intelligence</h2>
     {% bibliography --group_by year --query @*[dimension=3d]* %}
   </div>
 
   <div class="publications publications-collection" data-category="4d">
-    <h2 class="bibliography">4D Generation</h2>
+    <h2 class="bibliography">Video Generation &amp; World Models</h2>
     {% bibliography --group_by year --query @*[dimension=4d]* %}
   </div>
 
@@ -84,22 +92,37 @@ nav_order: 2
     const chips = document.querySelectorAll(".publication-category-chip");
     const collections = document.querySelectorAll(".publications-collection");
 
-    const setActiveCategory = (target) => {
+    const validCategories = new Set(Array.from(chips, (chip) => chip.dataset.target));
+
+    const setActiveCategory = (target, updateUrl = false) => {
+      const category = validCategories.has(target) ? target : "selected";
+
       chips.forEach((chip) => {
-        chip.classList.toggle("is-active", chip.dataset.target === target);
+        chip.classList.toggle("is-active", chip.dataset.target === category);
       });
 
       collections.forEach((section) => {
-        section.classList.toggle("is-active", section.dataset.category === target);
+        section.classList.toggle("is-active", section.dataset.category === category);
       });
+
+      if (updateUrl) {
+        const url = new URL(window.location.href);
+        if (category === "selected") {
+          url.searchParams.delete("category");
+        } else {
+          url.searchParams.set("category", category);
+        }
+        window.history.replaceState({}, "", url);
+      }
     };
 
     chips.forEach((chip) => {
       chip.addEventListener("click", function () {
-        setActiveCategory(chip.dataset.target);
+        setActiveCategory(chip.dataset.target, true);
       });
     });
 
-    setActiveCategory("selected");
+    const requestedCategory = new URLSearchParams(window.location.search).get("category");
+    setActiveCategory(requestedCategory || "selected");
   });
 </script>

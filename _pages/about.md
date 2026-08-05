@@ -17,12 +17,12 @@ social: true # includes social icons at the bottom of the page
 ---
 <section class="home-hero">
   <div class="home-hero-copy">
-    <p class="home-kicker">Computer Vision · Graphics · Digital Humans</p>
+    <p class="home-kicker">Video Generation · World Models · Spatial Intelligence</p>
     <div class="home-tags">
-      <span>2D/3D Content Generation</span>
-      <span>Neural Rendering</span>
       <span>Video Generation</span>
-      <span>Avatar Intelligence</span>
+      <span>World Models</span>
+      <span>Spatial Intelligence</span>
+      <span>Digital Avatars</span>
     </div>
     <div class="home-actions">
       <a class="home-action primary" href="{{ '/publications/' | relative_url }}">View Publications</a>
@@ -33,9 +33,9 @@ social: true # includes social icons at the bottom of the page
   <aside class="home-focus-card">
     <p class="home-focus-label">Current Focus</p>
     <ul>
-      <li>Human-centered multimodal spatial intelligence and generation</li>
-      <li>Real-time video generation and long-form interactive avatar video generation</li>
-      <li>A closed research loop spanning 2D editing, 3D generation, and 4D interaction</li>
+      <li>Video generation and generative world models</li>
+      <li>Human-centered multimodal spatial intelligence and digital avatars</li>
+      <li>Image generation and editing</li>
     </ul>
   </aside>
 </section>
@@ -48,17 +48,16 @@ social: true # includes social icons at the bottom of the page
     <a href="https://cqf.io/" target="_blank" rel="noopener noreferrer">[Prof. Qifeng Chen]</a>.
   </p>
   <p>
-    My research centers on human-centered multimodal spatial intelligence and generative algorithms. More specifically,
-    I pursue a coherent research agenda that progresses from <strong>2D spatial reconstruction and editing</strong>,
-    to <strong>3D high-fidelity static generation</strong>, and further to <strong>4D dynamic spatiotemporal interaction</strong>.
-    This forms a layered and closed-loop pipeline for understanding, reconstructing, generating, and animating realistic
-    humans and avatars across dimensions.
+    My research centers on <strong>video generation and generative world models</strong>,
+    <strong>human-centered multimodal spatial intelligence</strong>, and <strong>image generation and editing</strong>.
+    I study how generative systems can understand, predict, and synthesize visual worlds across space and time, with a
+    particular interest in realistic, controllable, and interactive digital humans and avatars.
   </p>
   <p>
-    I am particularly interested in building intelligent systems that bridge vision, graphics, and generation for digital
-    humans. Recently, I have also been increasingly interested in <strong>real-time video generation</strong> and
-    <strong>long-form interactive avatar video generation</strong>, especially toward controllable, expressive, and
-    temporally coherent avatar systems.
+    I am particularly interested in <strong>real-time and long-form video generation</strong>, as well as
+    <strong>interactive world models</strong> that maintain persistent state, spatial consistency, and controllable scene
+    evolution over extended horizons. My goal is to build efficient generative systems that can perceive actions, model
+    future dynamics, and produce coherent, responsive visual experiences for both open-ended worlds and digital humans.
   </p>
   <p>
     Beyond research, I am deeply passionate about fishing. I hope to one day travel across China to fish in its

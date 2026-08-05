@@ -58,7 +58,7 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
+    <!-- Recent highlights -->
     {% if page.selected_papers %}
       <section class="home-section">
         <h2>
@@ -67,12 +67,7 @@ layout: default
         {% include recent_highlights.liquid %}
       </section>
 
-      <section class="home-section">
-        <h2>
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Recent Publications</a>
-        </h2>
-        {% include selected_papers.liquid %}
-      </section>
+      {% include research_topics.liquid %}
     {% endif %}
 
     <!-- Social -->

@@ -3,6 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 description: Some projects I worked on during my full-time role.
+hide_title: true
 nav: true
 nav_order: 3
 display_categories: [work]
@@ -22,7 +23,7 @@ horizontal: false
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
   <a class="project-category-link" id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
+    <h2 class="category">{% if category == "work" %}Research & Industry{% else %}{{ category }}{% endif %}</h2>
   </a>
   {% assign categorized_projects = site.projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}

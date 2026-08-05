@@ -41,7 +41,9 @@
       {% endif %}
       <div class="card-body">
         <p class="project-card-kicker">
-          {% if project.category %}
+          {% if project.category == "work" %}
+            Project
+          {% elsif project.category %}
             {{ project.category }}
           {% else %}
             Project
