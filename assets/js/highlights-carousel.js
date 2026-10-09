@@ -54,7 +54,6 @@
         sound.querySelector('svg').innerHTML = '<path d="M10 5 5 9H2v6h3l5 4Z"/>' + (muted ? '<path d="M15 9l6 6m0-6-6 6"/>' : '<path d="M14 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>');
       }
     }
-    function size() { stage.style.height = Math.ceil(Math.max(...cards.map(card => card.offsetHeight)) + 52) + 'px'; }
     function select(next, announce = true) {
       index = (next + cards.length) % cards.length;
       cards.forEach((card, i) => {
@@ -66,10 +65,11 @@
         dots[i].setAttribute('aria-current', String(i === index));
       });
       if (announce) root.querySelector('.highlight-status').textContent = `${index + 1} of ${cards.length}: ${cards[index].querySelector('h3').textContent}`;
-      playback(); size();
+      playback();
     }
-    root.classList.add('is-enhanced');
-    root.querySelector('.highlight-controls').hidden = false;
+    const controls = root.querySelector('.highlight-controls');
+    controls.removeAttribute('aria-hidden');
+    controls.inert = false;
     root.querySelector('[data-carousel-prev]').addEventListener('click', () => select(index - 1));
     root.querySelector('[data-carousel-next]').addEventListener('click', () => select(index + 1));
     motion.addEventListener('click', () => { paused = !paused; playback(); });
@@ -109,8 +109,6 @@
       gesture = null;
     });
     stage.addEventListener('pointercancel', () => { gesture = null; });
-    new ResizeObserver(size).observe(stage);
-    cards.forEach(card => new ResizeObserver(size).observe(card));
     new IntersectionObserver(entries => { visible = entries[0].isIntersecting; playback(); }, { rootMargin: '200px 0px', threshold: 0 }).observe(root);
     document.addEventListener('visibilitychange', playback);
     reduce.addEventListener('change', () => { paused = reduce.matches; playback(); });

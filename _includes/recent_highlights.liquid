@@ -1,6 +1,6 @@
-<div class="home-report-highlights" data-highlights-carousel role="region" aria-roledescription="carousel" aria-label="Recent research highlights">
+<div class="home-report-highlights is-enhanced" data-highlights-carousel role="region" aria-roledescription="carousel" aria-label="Recent research highlights">
   <div class="home-report-grid">
-    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide">
+    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide" data-position="center" aria-hidden="false">
       <video
         class="home-report-media"
         data-src="{{ 'assets/video/highlights/opsdv.mp4' | relative_url }}"
@@ -18,7 +18,7 @@
         {% include highlight_links.liquid title="OPSD-V" project="https://meigen-ai.github.io/OPSD-V/" paper="https://arxiv.org/abs/2607.08766" code="https://github.com/MeiGen-AI/OPSD-V" %}
       </div>
     </article>
-    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide">
+    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide" data-position="right" aria-hidden="false">
       <video
         class="home-report-media"
         data-src="{{ 'assets/video/highlights/helixworld.mp4' | relative_url }}"
@@ -36,7 +36,7 @@
         {% include highlight_links.liquid title="HelixWorld" project="https://helixworld.org/" paper="https://arxiv.org/abs/2609.38123" code="https://github.com/NoizAI/HelixWorld" %}
       </div>
     </article>
-    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide">
+    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide" data-position="hidden" aria-hidden="true" inert>
       <video
         class="home-report-media"
         data-src="{{ 'assets/video/highlights/worldsonus.mp4' | relative_url }}"
@@ -54,7 +54,7 @@
         {% include highlight_links.liquid title="WorldSonus" project="https://noizai.github.io/WorldSonus/" code="https://github.com/NoizAI/WorldSonus" paper="https://arxiv.org/abs/2610.08760" %}
       </div>
     </article>
-    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide">
+    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide" data-position="hidden" aria-hidden="true" inert>
       <video
         class="home-report-media"
         data-src="{{ 'assets/video/highlights/longcat.mp4' | relative_url }}"
@@ -72,7 +72,7 @@
         {% include highlight_links.liquid title="LongCat-Video-Avatar 1.5" project="https://meigen-ai.github.io/LongCat-Video-Avatar-1.5-Page/" paper="https://arxiv.org/abs/2605.26486" code="https://github.com/meituan-longcat/LongCat-Video" %}
       </div>
     </article>
-    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide">
+    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide" data-position="left" aria-hidden="false">
       <video
         class="home-report-media"
         data-src="{{ 'assets/video/highlights/dyaplex.mp4' | relative_url }}"
@@ -91,7 +91,7 @@
       </div>
     </article>
   </div>
-  <div class="highlight-controls" hidden>
+  <div class="highlight-controls" aria-hidden="true" inert>
     <button class="highlight-arrow" type="button" data-carousel-prev aria-label="Previous project">{% include home_icon.liquid name="left" %}</button>
     <div class="highlight-dots" aria-label="Choose a project"></div>
     <button class="highlight-arrow" type="button" data-carousel-next aria-label="Next project">{% include home_icon.liquid name="right" %}</button>

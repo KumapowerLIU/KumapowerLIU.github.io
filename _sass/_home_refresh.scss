@@ -55,9 +55,9 @@
   .home-report-highlights.is-enhanced {
     margin: 0;
     overflow: hidden;
-    .home-report-grid { display: block; position: relative; perspective: 1400px; touch-action: pan-y; min-height: 430px; margin: 0 -1rem; }
+    .home-report-grid { display: grid; grid-template-columns: minmax(0, 1fr); align-items: start; position: relative; perspective: 1400px; touch-action: pan-y; min-height: 430px; margin: 0 -1rem; padding-bottom: 30px; }
     .home-report-card {
-      position: absolute; width: 52%; max-width: 510px; left: 50%; top: 22px;
+      grid-area: 1 / 1; position: relative; width: 52%; max-width: 510px; left: 50%; margin-top: 22px;
       transform-origin: center; will-change: transform;
       transition: transform .55s cubic-bezier(.22,.68,.2,1), opacity .4s, box-shadow .4s;
       user-select: none; -webkit-user-drag: none;
@@ -82,7 +82,7 @@
   }
   .home-report-card[data-position="left"], .home-report-card[data-position="right"] { cursor: pointer; }
   .highlight-controls { display: flex; align-items: center; justify-content: center; gap: 1.1rem; padding: .7rem 0 .1rem; }
-  .highlight-controls[hidden] { display: none; }
+  .highlight-controls[aria-hidden="true"] { visibility: hidden; pointer-events: none; }
   .highlight-arrow, .highlight-motion {
     display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px;
     padding: 0; border: 1px solid rgba(15,118,110,.18); border-radius: 50%; color: #0f766e; background: transparent; cursor: pointer;
@@ -90,7 +90,7 @@
     &:focus-visible { outline: 2px solid #0f766e; outline-offset: 3px; }
   }
   .highlight-motion { width: 34px; height: 34px; margin-left: .3rem; }
-  .highlight-dots { display: flex; align-items: center; gap: 3px; }
+  .highlight-dots { display: flex; align-items: center; gap: 3px; min-height: 38px; }
   .highlight-dot { width: 30px; height: 38px; border: 0; padding: 8px; background: transparent; cursor: pointer;
     &::after { content: ""; display: block; width: 7px; height: 7px; margin: auto; border-radius: 5px; background: rgba(15,118,110,.23); transition: width .3s, background .3s; }
     &[aria-current="true"]::after { width: 22px; background: #0f766e; }
