@@ -3,4 +3,8 @@ module.exports = {
   css: ["_site/assets/css/*.css"],
   output: "_site/assets/css/",
   skippedContentGlobs: ["_site/assets/**/*.html"],
+  // Carousel positions are assigned at runtime through element.dataset.position.
+  safelist: {
+    greedy: [/data-position/],
+  },
 };
