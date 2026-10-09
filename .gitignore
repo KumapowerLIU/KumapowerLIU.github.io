@@ -11,3 +11,16 @@ assets/libs/
 node_modules/
 vendor
 .idea
+.worldline-preview/
+
+# Local previews, experiments, and writing drafts
+_config.preview.yml
+_config.worldline-preview.yml
+academic-site/
+illustrations/
+output/
+research/
+tests/
+tmp/
+zhihu-opsdv/
+打开原版实验预览.command

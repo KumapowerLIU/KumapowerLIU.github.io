@@ -764,6 +764,24 @@ footer.sticky-bottom {
           font-style: normal;
         }
 
+        > em.author-self {
+          display: inline;
+          padding: .08em .3em;
+          border: 0;
+          border-radius: .3em;
+          background: rgba(15, 118, 110, .09);
+          color: #0f766e;
+          font-weight: 650;
+          white-space: nowrap;
+          box-decoration-break: clone;
+          -webkit-box-decoration-break: clone;
+        }
+
+        html[data-theme="dark"] & > em.author-self {
+          background: rgba(94, 234, 212, .12);
+          color: #5eead4;
+        }
+
         > span.more-authors {
           color: var(--global-text-color-light);
           border-bottom: 1px dashed var(--global-text-color-light);

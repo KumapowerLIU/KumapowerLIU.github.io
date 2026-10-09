@@ -1,11 +1,10 @@
-<div class="home-report-highlights" aria-label="Recent technical reports and project releases">
+<div class="home-report-highlights" data-highlights-carousel role="region" aria-roledescription="carousel" aria-label="Recent research highlights">
   <div class="home-report-grid">
-    <a class="home-report-card" href="https://meigen-ai.github.io/OPSD-V/" target="_blank" rel="noopener noreferrer">
+    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide">
       <video
         class="home-report-media"
-        src="{{ 'assets/video/project/opsdv-preview.mp4' | relative_url }}"
+        src="{{ 'assets/video/project/opsdv-demo-90s-1080p.mp4' | relative_url }}"
         poster="{{ 'assets/img/project/opsdv-poster.jpg' | relative_url }}"
-        autoplay
         muted
         loop
         playsinline
@@ -16,14 +15,50 @@
         <span>MeiGen · Technical Report</span>
         <h3>OPSD-V</h3>
         <p>On-policy self-distillation for post-training few-step autoregressive video generators, reducing long-horizon degradation.</p>
+        {% include highlight_links.liquid title="OPSD-V" project="https://meigen-ai.github.io/OPSD-V/" paper="https://arxiv.org/abs/2607.08766" code="https://github.com/MeiGen-AI/OPSD-V" %}
       </div>
-    </a>
-    <a class="home-report-card" href="https://meigen-ai.github.io/LongCat-Video-Avatar-1.5-Page/" target="_blank" rel="noopener noreferrer">
+    </article>
+    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide">
+      <video
+        class="home-report-media"
+        src="{{ 'assets/img/publication_preview/helixworld-preview.mp4' | relative_url }}"
+        poster="{{ 'assets/img/project/helixworld-poster.jpg' | relative_url }}"
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-label="HelixWorld audio-visual world model video preview"
+      ></video>
+      <div class="home-report-body">
+        <span>Noiz AI · Technical Report</span>
+        <h3>HelixWorld</h3>
+        <p>Real-time interactive world generation with synchronized video and spatial sound that follows your viewpoint.</p>
+        {% include highlight_links.liquid title="HelixWorld" project="https://helixworld.org/" paper="https://arxiv.org/abs/2609.38123" code="https://github.com/NoizAI/HelixWorld" %}
+      </div>
+    </article>
+    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide">
+      <video
+        class="home-report-media"
+        src="{{ 'assets/video/project/worldsonus-preview.mp4' | relative_url }}"
+        poster="{{ 'assets/img/project/worldsonus-poster.jpg' | relative_url }}"
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-label="WorldSonus streaming spatial audio demo"
+      ></video>
+      <div class="home-report-body">
+        <span>Noiz AI · Technical Report</span>
+        <h3>WorldSonus</h3>
+        <p>Streaming stereo sound for visual worlds, with motion-aligned audio and text instructions that can change during generation.</p>
+        {% include highlight_links.liquid title="WorldSonus" project="https://noizai.github.io/WorldSonus/" code="https://github.com/NoizAI/WorldSonus" paper="https://arxiv.org/abs/2610.08760" %}
+      </div>
+    </article>
+    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide">
       <video
         class="home-report-media"
         src="{{ 'assets/video/project/longcat-introduction.mp4' | relative_url }}"
         poster="{{ 'assets/img/project/longcat-video-avatar-poster.png' | relative_url }}"
-        autoplay
         muted
         loop
         playsinline
@@ -34,14 +69,14 @@
         <span>Meituan LongCat · Technical Report</span>
         <h3>LongCat-Video-Avatar 1.5</h3>
         <p>Open-source audio-driven avatar video generation with stronger lip sync, long-video stability, and practical 8-step inference.</p>
+        {% include highlight_links.liquid title="LongCat-Video-Avatar 1.5" project="https://meigen-ai.github.io/LongCat-Video-Avatar-1.5-Page/" paper="https://arxiv.org/abs/2605.26486" code="https://github.com/meituan-longcat/LongCat-Video" %}
       </div>
-    </a>
-    <a class="home-report-card" href="https://research.nvidia.com/labs/amri/projects/DyaPlex" target="_blank" rel="noopener noreferrer">
+    </article>
+    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide">
       <video
         class="home-report-media"
         src="{{ 'assets/video/project/dyaplex-hero-video.mp4' | relative_url }}"
-        poster="{{ 'assets/img/project/dyaplex-teaser.jpg' | relative_url }}"
-        autoplay
+        poster="{{ 'assets/img/project/dyaplex-interaction-poster.jpg' | relative_url }}"
         muted
         loop
         playsinline
@@ -49,10 +84,20 @@
         aria-label="DyaPlex video preview"
       ></video>
       <div class="home-report-body">
-        <span>NVIDIA · Technical Report</span>
+        <span>NVIDIA · NeurIPS 2026</span>
         <h3>DyaPlex</h3>
         <p>Full-duplex speech-motion model for dyadic interaction, coupling streaming speech and body motion for responsive digital agents.</p>
+        {% include highlight_links.liquid title="DyaPlex" project="https://research.nvidia.com/labs/amri/projects/DyaPlex" paper="https://arxiv.org/abs/2606.03874" %}
       </div>
-    </a>
+    </article>
+  </div>
+  <div class="highlight-controls" hidden>
+    <button class="highlight-arrow" type="button" data-carousel-prev aria-label="Previous project">{% include home_icon.liquid name="left" %}</button>
+    <div class="highlight-dots" aria-label="Choose a project"></div>
+    <button class="highlight-arrow" type="button" data-carousel-next aria-label="Next project">{% include home_icon.liquid name="right" %}</button>
+    <button class="highlight-motion" type="button" data-carousel-motion aria-label="Pause video preview" aria-pressed="false">{% include home_icon.liquid name="pause" %}</button>
+    <button class="highlight-motion" type="button" data-carousel-sound aria-label="Unmute video preview" aria-pressed="false">{% include home_icon.liquid name="sound" %}</button>
+    <span class="highlight-status" aria-live="polite" aria-atomic="true"></span>
   </div>
 </div>
+<script src="{{ '/assets/js/highlights-carousel.js' | relative_url }}" defer></script>

@@ -47,9 +47,16 @@
         {% if entry.preview contains '://' %}
           <img class="{{ preview_classes }}" src="{{ entry.preview }}" alt="{{ entry.title | escape }}" loading="lazy">
         {% elsif entry.preview contains '.mp4' or entry.preview contains '.webm' or entry.preview contains '.mov' %}
+          {% assign preview_first_character = entry.preview | slice: 0 %}
+          {% assign preview_video_path = entry.preview %}
+          {% unless preview_first_character == '/' %}
+            {% assign preview_video_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+          {% endunless %}
           <video
             class="{{ preview_classes }}"
-            src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"
+            src="{{ preview_video_path | relative_url }}"
+            {% if entry.preview_poster %}poster="{{ entry.preview_poster | relative_url }}"{% endif %}
+            {% if entry.preview_controls %}controls{% endif %}
             autoplay
             muted
             loop
@@ -106,7 +113,9 @@
         {% assign author_full_name = author.first | append: ' ' | append: author_last_name %}
         {% assign author_project_leader = false %}
         {% if entry.project_leader and entry.project_leader == author_full_name %}
-          {% assign author_project_leader = true %}
+          {% unless author.last contains '†' %}
+            {% assign author_project_leader = true %}
+          {% endunless %}
         {% endif %}
         {% if site.data.coauthors[clean_last_name] %}
           {%- for coauthor in site.data.coauthors[clean_last_name] -%}
@@ -122,7 +131,7 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
+          <em class="author-self">
             {{- author.first }}
             {{ author_last_html -}}
             {%- if author_project_leader -%}<sup>&#8224;</sup>{%- endif -%}

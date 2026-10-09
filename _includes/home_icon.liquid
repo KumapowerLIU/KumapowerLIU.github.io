@@ -1,0 +1,20 @@
+<svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  {% case include.name %}
+  {% when 'video' %}
+    <path d="M3 15V4h13M6 18V7h13"/><rect x="9" y="10" width="13" height="11" rx="2"/><path d="m14 13 4 2.5-4 2.5Z"/>
+  {% when 'human' %}
+    <circle cx="12" cy="4" r="2"/><path d="M12 6v8m-6-5 6 1 6-1M8 21l4-7 4 7M3 4v17h18"/><circle cx="6" cy="9" r="1"/><circle cx="18" cy="9" r="1"/><circle cx="12" cy="14" r="1"/>
+  {% when 'editing' %}
+    <path d="M12 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v5M3 16l5-5 4 4"/><circle cx="8" cy="7" r="1.5"/><path d="m13 21 1-4 6-6 3 3-6 6-4 1Zm5-8 3 3"/>
+  {% when 'papers' %}
+    <path d="M8 3h9l4 4v13H8ZM17 3v5h4M4 7v15h12M11 12h7m-7 4h7"/>
+  {% when 'scholar' %}
+    <path d="m2 9 10-6 10 6-10 6L2 9Zm4 3v6c4 3 8 3 12 0v-6m4-3v9"/>
+  {% when 'github' %}
+    <path d="M9 21v-3c-3 .7-4-1-5-3m11 6v-3.5c0-1-.3-1.6-.8-2.1 2.8-.3 5.8-1.4 5.8-6.1a4.7 4.7 0 0 0-1.3-3.2c.2-.8.2-2-.2-3.1 0 0-1.1-.3-3.4 1.2a12 12 0 0 0-6.2 0C6.6 2.7 5.5 3 5.5 3c-.4 1.1-.4 2.3-.2 3.1A4.7 4.7 0 0 0 4 9.3c0 4.7 3 5.8 5.8 6.1-.5.5-.8 1.2-.8 2.1"/>
+  {% when 'left' %}<path d="m14 6-6 6 6 6"/>
+  {% when 'right' %}<path d="m10 6 6 6-6 6"/>
+  {% when 'pause' %}<path d="M9 6v12m6-12v12"/>
+  {% when 'sound' %}<path d="M10 5 5 9H2v6h3l5 4ZM15 9l6 6m0-6-6 6"/>
+  {% endcase %}
+</svg>

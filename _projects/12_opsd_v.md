@@ -3,13 +3,13 @@ layout: page
 title: OPSD-V
 description: On-policy self-distillation for post-training few-step autoregressive video generators, improving long-horizon quality and motion dynamics while preserving the original sampler.
 img: assets/img/project/opsdv-poster.jpg
-video: assets/video/project/opsdv-preview.mp4
+video: assets/video/project/opsdv-demo-90s-1080p.mp4
 redirect: https://meigen-ai.github.io/OPSD-V/
 importance: -1
 category: work
 ---
 
-<video class="project-detail-video" src="{{ 'assets/video/project/opsdv-preview.mp4' | relative_url }}" poster="{{ 'assets/img/project/opsdv-poster.jpg' | relative_url }}" autoplay muted loop playsinline controls preload="metadata"></video>
+<video class="project-detail-video" src="{{ 'assets/video/project/opsdv-demo-90s-1080p.mp4' | relative_url }}" poster="{{ 'assets/img/project/opsdv-poster.jpg' | relative_url }}" autoplay muted loop playsinline controls preload="metadata"></video>
 
 OPSD-V is an on-policy self-distillation framework for post-training few-step autoregressive video generators. It continues training the student on its inference-time rollout states while using a cleaner teacher context to reduce long-horizon degradation and strengthen motion dynamics.
 

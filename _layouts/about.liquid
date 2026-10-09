@@ -22,8 +22,7 @@ layout: default
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid home-profile-image' %}
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
@@ -61,9 +60,7 @@ layout: default
     <!-- Recent highlights -->
     {% if page.selected_papers %}
       <section class="home-section">
-        <h2>
-          <a href="{{ '/projects/' | relative_url }}" style="color: inherit">Recent Highlights</a>
-        </h2>
+        <h2>Recent Highlights</h2>
         {% include recent_highlights.liquid %}
       </section>
 
