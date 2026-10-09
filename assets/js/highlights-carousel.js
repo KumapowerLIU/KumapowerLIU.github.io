@@ -4,6 +4,12 @@
     const cards = [...stage.querySelectorAll('.home-report-card')];
     if (cards.length < 2) return;
     const videos = cards.map(card => card.querySelector('video'));
+    const resumeTimes = videos.map(() => 0);
+    videos.forEach((video, i) => {
+      if (video) video.addEventListener('loadedmetadata', () => {
+        if (resumeTimes[i] > 0 && resumeTimes[i] < video.duration) video.currentTime = resumeTimes[i];
+      });
+    });
     const reduce = matchMedia('(prefers-reduced-motion: reduce)');
     const motion = root.querySelector('[data-carousel-motion]');
     const sound = root.querySelector('[data-carousel-sound]');
@@ -22,8 +28,22 @@
       videos.forEach((video, i) => {
         if (!video) return;
         video.muted = muted || i !== index;
-        if (i === index && visible && !paused && !document.hidden) video.play().catch(() => {});
-        else video.pause();
+        if (i === index && visible && !document.hidden) {
+          if (!paused) {
+            if (!video.hasAttribute('src')) {
+              video.src = video.dataset.src;
+              video.load();
+            }
+            video.play().catch(() => {});
+          } else video.pause();
+        } else {
+          video.pause();
+          if (video.hasAttribute('src')) {
+            resumeTimes[i] = video.currentTime;
+            video.removeAttribute('src');
+            video.load();
+          }
+        }
       });
       motion.setAttribute('aria-pressed', String(paused));
       motion.setAttribute('aria-label', paused ? 'Play video preview' : 'Pause video preview');
@@ -91,7 +111,7 @@
     stage.addEventListener('pointercancel', () => { gesture = null; });
     new ResizeObserver(size).observe(stage);
     cards.forEach(card => new ResizeObserver(size).observe(card));
-    new IntersectionObserver(entries => { visible = entries[0].isIntersecting; playback(); }, { threshold: .15 }).observe(root);
+    new IntersectionObserver(entries => { visible = entries[0].isIntersecting; playback(); }, { rootMargin: '200px 0px', threshold: 0 }).observe(root);
     document.addEventListener('visibilitychange', playback);
     reduce.addEventListener('change', () => { paused = reduce.matches; playback(); });
     select(0, false);
