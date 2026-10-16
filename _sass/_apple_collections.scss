@@ -1,0 +1,126 @@
+// Shared Apple-inspired visual layer; content and filter behavior stay in their templates.
+body:has(.project-showcase, .publication-showcase, .memories-page) {
+  --collection-canvas: #fff;
+  --collection-surface: #f5f5f7;
+  --collection-ink: #1d1d1f;
+  --collection-muted: #6e6e73;
+  --collection-line: #e0e0e0;
+  --collection-blue: #0066cc;
+  background: var(--collection-canvas);
+}
+html[data-theme="dark"] body:has(.project-showcase, .publication-showcase, .memories-page) {
+  --collection-canvas: #000;
+  --collection-surface: #1d1d1f;
+  --collection-ink: #f5f5f7;
+  --collection-muted: #a1a1a6;
+  --collection-line: #424245;
+  --collection-blue: #2997ff;
+}
+// Explicit theme scope also overrides the older page-specific dark styles.
+html:root {
+  .project-showcase, .publication-showcase, .memories-page {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--collection-ink);
+    .project-showcase-header, .publication-hero, .memories-header {
+      padding: 2rem 0 2.5rem; margin: 0 0 1.5rem;
+      border: 0; border-radius: 0; background: none; box-shadow: none; text-align: left;
+      h1 { margin: 0 0 1rem; font-size: clamp(2.75rem, 5.4vw, 4rem); font-weight: 600; line-height: 1.07; letter-spacing: -.035em; color: var(--collection-ink); }
+    }
+    .project-showcase-kicker, .publication-kicker, .project-card-kicker, .search-panel-label {
+      padding: 0; background: none; color: var(--collection-muted); font-size: .72rem; font-weight: 600; letter-spacing: .07em;
+    }
+    .project-showcase-copy, .publication-intro, .memories-header h2, .memories-intro p {
+      max-width: 48rem; color: var(--collection-muted); font-size: 1.0625rem; line-height: 1.65;
+    }
+    a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid #0071e3; outline-offset: 4px; }
+  }
+  .project-showcase {
+    .project-category-link { margin-bottom: 1.5rem; }
+    h2.category { padding: 0; border: 0; background: none; color: var(--collection-ink); text-transform: none; letter-spacing: -.025em; font-size: 1.75rem; font-weight: 600; }
+    .card { border: 0; border-radius: 18px; background: var(--collection-surface); box-shadow: none; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .card-img-top { border: 0; background: var(--collection-surface); }
+    .card-body { padding: 1.5rem; gap: .8rem; }
+    .card-title { color: var(--collection-ink); font-weight: 600; }
+    .card-text, .project-card-github { color: var(--collection-muted); }
+    .project-card-cta { padding: .5rem 0; background: none; color: var(--collection-blue); font-weight: 400; }
+    .project-card-cta::after { content: "›"; margin-left: .5rem; font-size: 1.2em; }
+    .row > .col { margin-bottom: 1.75rem; }
+  }
+  .publication-showcase {
+    .publication-pathway { max-width: none; flex-wrap: wrap; gap: .5rem; }
+    .publication-pathway span { border: 0; background: var(--collection-surface); color: var(--collection-muted); font-weight: 400; }
+    .publication-pathway i { color: var(--collection-muted); }
+    .publication-note { padding: .75rem 0; border: 0; border-radius: 0; background: none; }
+    .publication-note .label, .publication-note p, .search-panel-copy p { color: var(--collection-muted); }
+    .publication-note code { color: var(--collection-ink); background: var(--collection-surface); }
+    .publication-action, .publication-action:hover { background: #0066cc; color: #fff; font-weight: 400; min-height: 44px; box-shadow: none; transform: none; }
+    .publication-search-panel { padding: 1.5rem; border: 0; border-radius: 18px; background: var(--collection-surface); box-shadow: none; }
+    .bibsearch-form-input { border: 1px solid var(--collection-line); background: var(--collection-canvas); color: var(--collection-ink); box-shadow: none; }
+    .bibsearch-form-input::placeholder { color: var(--collection-muted); }
+    .publication-categories-nav { gap: .5rem; }
+    .publication-categories-nav .publication-category-chip {
+      background: var(--collection-surface); color: var(--collection-ink); border: 1px solid transparent; font-weight: 400; box-shadow: none;
+      &:hover { border-color: var(--collection-blue); box-shadow: none; transform: none; }
+      &.is-active { background: #0066cc; color: white; box-shadow: none; }
+    }
+    .publications-collection h2.bibliography { color: var(--collection-muted); border-color: var(--collection-line); letter-spacing: .035em; }
+    .publications-collection ol.bibliography li {
+      padding: 1.75rem 0; margin-bottom: 0; border: 0; border-bottom: 1px solid var(--collection-line); border-radius: 0; background: none; box-shadow: none;
+      &:hover { transform: none; background: none; box-shadow: none; border-color: var(--collection-line); }
+      .title { color: var(--collection-ink); font-weight: 600; }
+      .author, .periodical { color: var(--collection-muted); }
+      .preview { box-shadow: none; }
+      .preview.preview-figure, .preview.preview-contain { background: var(--collection-surface); }
+      .publication-badge { box-shadow: none; }
+      .links a.btn { border-color: var(--collection-line); background: none; color: var(--collection-blue); font-weight: 400; }
+      .links a.btn:hover { border-color: var(--collection-blue); background: var(--collection-surface); color: var(--collection-blue); }
+    }
+  }
+  .memories-page {
+    .memories-header { margin-bottom: 0; padding-bottom: 1rem; }
+    .memories-intro { padding: 0; margin-bottom: 2rem; }
+    .memories-stats { gap: 2.5rem; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--collection-line); }
+    .memory-stat { min-width: 0; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
+    .memory-stat-value { color: var(--collection-ink); font-weight: 600; font-size: 2rem; }
+    .memory-stat-label { color: var(--collection-muted); font-weight: 400; letter-spacing: .03em; }
+    .memory-gallery { gap: 1.5rem; }
+    .memory-card-media { border-radius: 18px; background: var(--collection-surface); box-shadow: none; }
+    .memory-card-collage { padding: 0; gap: 4px; }
+    .memory-card-collage-tile { border-radius: 0; }
+    .memory-card-overlay { padding: 1.5rem; background: linear-gradient(180deg, transparent 25%, rgba(0,0,0,.78)); }
+    .memory-card-overlay-copy { padding: 1rem 0 0; border: 0; border-radius: 0; background: none; backdrop-filter: none; }
+    .memory-card-title { color: #fff; font-size: 1.5rem; font-weight: 600; }
+    .memory-card-meta { color: #e5e5e7; font-weight: 400; letter-spacing: .025em; }
+    .memory-card-description { color: #f5f5f7; }
+    .memory-card-badge { font-weight: 400; letter-spacing: .03em; background: rgba(0,0,0,.4); }
+  }
+}
+@media (max-width: 767px) {
+  html:root {
+    .project-showcase .project-showcase-header, .publication-showcase .publication-hero, .memories-page .memories-header { padding-top: 1rem; }
+    .publication-showcase {
+      .publication-pathway { display: flex; }
+      .publication-pathway span { text-align: left; padding: .5rem .75rem; }
+      .publication-pathway i { display: none; }
+      .publication-search-panel { padding: 1.1rem; }
+    }
+    .memories-page .memory-stat { flex: 0 1 auto; }
+    .memories-page .memories-stats { gap: 1.75rem; }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html:root .project-showcase .card, html:root .memories-page .memory-card-image { transition: none; }
+}
+@media (max-width: 767px) {
+  html:root .publication-showcase .publication-categories-nav { margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+}
+html:root .memories-page {
+  .memory-card-media { height: 480px; min-height: 0; }
+  .memory-card-collage { min-height: 0; }
+  .memory-card-collage-tile { min-height: 0; }
+  .memory-card-meta span { color: #e5e5e7; }
+}
+@media (max-width: 767px) {
+  html:root .memories-page .memory-card-media { height: 400px; }
+}

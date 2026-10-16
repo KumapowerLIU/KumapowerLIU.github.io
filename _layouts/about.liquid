@@ -3,6 +3,7 @@ layout: default
 ---
 <div class="post homepage">
   <header class="post-header">
+    <p class="home-identity-label">HKUST <span aria-hidden="true">/</span> Computer Science &amp; Engineering</p>
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
@@ -40,7 +41,7 @@ layout: default
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
-      <section class="home-section">
+      <section class="home-section home-section-news">
         <h2>
           <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
         </h2>
@@ -58,7 +59,7 @@ layout: default
 
     <!-- Recent highlights -->
     {% if page.selected_papers %}
-      <section class="home-section">
+      <section class="home-section home-section-highlights">
         <h2>Recent Highlights</h2>
         {% include recent_highlights.liquid %}
       </section>
