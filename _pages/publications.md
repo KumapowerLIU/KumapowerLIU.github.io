@@ -14,20 +14,10 @@ nav_order: 2
   <header class="publication-hero">
     <p class="publication-kicker">Research Output</p>
     <h1>Publications</h1>
-    <p class="publication-intro">
-      A research record spanning image generation and editing, human-centered multimodal spatial intelligence,
-      and video generation with generative world models. Search by topic, venue, year, or collaborator.
-    </p>
-    <div class="publication-pathway" aria-label="Research themes across image generation, spatial intelligence, and video generation">
-      <span>Image Generation &amp; Editing</span>
-      <i aria-hidden="true">→</i>
-      <span>Human-Centered Spatial Intelligence</span>
-      <i aria-hidden="true">→</i>
-      <span>Video Generation &amp; World Models</span>
-    </div>
+    <p class="publication-intro">World models, digital humans, and visual generation.</p>
     <div class="publication-meta">
       <div class="publication-note">
-        <span class="label">Contribution note</span>
+
         <p><code>*</code> denotes equal contribution; <code>†</code> denotes project leader or corresponding author.</p>
       </div>
       <a
@@ -36,16 +26,13 @@ nav_order: 2
         target="_blank"
         rel="noopener noreferrer"
       >
-        View Full Google Scholar List
+        Google Scholar ↗
       </a>
     </div>
   </header>
 
   <section class="publication-search-panel">
-    <div class="search-panel-copy">
-      <span class="search-panel-label">Quick Filter</span>
-      <p>Search by title, author, venue, year, or keyword to jump directly to relevant papers.</p>
-    </div>
+    <label class="search-panel-label" for="bibsearch">Find a paper</label>
 
     <div class="search-panel-input">
       {% include bib_search.liquid %}
@@ -59,6 +46,15 @@ nav_order: 2
     <button type="button" class="publication-category-chip" data-target="3d">Human-Centered Spatial Intelligence</button>
     <button type="button" class="publication-category-chip" data-target="4d">Video Generation &amp; World Models</button>
   </section>
+
+  <script>
+    // Set the filter buttons as soon as they exist, before the long bibliography parses.
+    document.querySelectorAll('.publication-category-chip').forEach(function (chip) {
+      var active = chip.dataset.target === document.documentElement.dataset.publicationCategory;
+      chip.classList.toggle('is-active', active);
+      chip.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+  </script>
 
   <div class="publications publications-collection" data-category="full">
     <h2 class="bibliography">Full</h2>
@@ -88,7 +84,7 @@ nav_order: 2
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  (function () {
     const chips = document.querySelectorAll(".publication-category-chip");
     const collections = document.querySelectorAll(".publications-collection");
 
@@ -97,9 +93,18 @@ nav_order: 2
     const setActiveCategory = (target, updateUrl = false) => {
       const category = validCategories.has(target) ? target : "selected";
 
+      document.documentElement.dataset.publicationCategory = category;
+
       chips.forEach((chip) => {
         chip.classList.toggle("is-active", chip.dataset.target === category);
+        chip.setAttribute("aria-pressed", chip.dataset.target === category ? "true" : "false");
       });
+
+      const activeChip = document.querySelector('.publication-category-chip.is-active');
+      const nav = activeChip.parentElement;
+      if (nav.scrollWidth > nav.clientWidth) {
+        nav.scrollLeft += activeChip.getBoundingClientRect().left - nav.getBoundingClientRect().left - (nav.clientWidth - activeChip.offsetWidth) / 2;
+      }
 
       collections.forEach((section) => {
         section.classList.toggle("is-active", section.dataset.category === category);
@@ -122,7 +127,11 @@ nav_order: 2
       });
     });
 
-    const requestedCategory = new URLSearchParams(window.location.search).get("category");
-    setActiveCategory(requestedCategory || "selected");
-  });
+    const restoreCategory = () => setActiveCategory(new URLSearchParams(window.location.search).get("category") || "selected");
+    restoreCategory();
+    window.addEventListener("popstate", restoreCategory);
+    window.addEventListener("pageshow", restoreCategory);
+  })();
 </script>
+
+<script src="{{ '/assets/js/publication-media.js' | relative_url | bust_file_cache }}" defer></script>

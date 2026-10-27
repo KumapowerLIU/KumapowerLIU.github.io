@@ -54,14 +54,14 @@
           {% endunless %}
           <video
             class="{{ preview_classes }}"
-            src="{{ preview_video_path | relative_url }}"
+            {% if page.permalink == '/publications/' %}data-src="{{ preview_video_path | relative_url }}"{% else %}src="{{ preview_video_path | relative_url }}"{% endif %}
             {% if entry.preview_poster %}poster="{{ entry.preview_poster | relative_url }}"{% endif %}
             {% if entry.preview_controls %}controls{% endif %}
-            autoplay
+            {% unless page.permalink == '/publications/' %}autoplay{% endunless %}
             muted
             loop
             playsinline
-            preload="metadata"
+            preload="none"
           ></video>
         {% elsif entry.preview contains '.gif' %}
           <img

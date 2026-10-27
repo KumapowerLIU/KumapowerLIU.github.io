@@ -60,3 +60,10 @@ The user approved publishing this revision on 2026-10-16. Future design revision
 
 ## Collection pages
 Projects, Publications and Memories share the homepage’s Apple-inspired typography, neutral surfaces and blue actions through `_sass/_apple_collections.scss`. Headers are open and unboxed. Projects use image-led gray cards; Publications use quiet separated rows with blue category pills and a neutral search panel; Memories prioritize photographs with unboxed album statistics and legible image captions. Preserve all paper authors, contribution marks, search/category state, project destinations and external album links. Scope these styles to the collection pages so project microsites remain unchanged.
+
+## October 17 refinement
+Keep the cover compact without a separate research-focus headline; the biography retains the current research focus. Use two desktop columns for larger project imagery. Remove repeated research tags from the publication header and shorten its search panel so papers appear earlier. Keep search, all five categories, full author lists and contribution notes intact; expose category selection with aria-pressed. Memories uses a clear page title and an image-led gallery. Main navigation uses a restrained translucent neutral surface. This refinement and the October 27 content update were approved for publication on October 27, 2026.
+
+## October 27 content and navigation update
+SMD metadata is verified against its official repository and arXiv:2610.18472. The highlight and 4d publication use the full official teaser from https://zjwfufu.github.io/SMD-Page/assets/teaser/SMD_r69_1080p_x264.mp4, re-encoded for delivery without trimming or dropping audio. Poster source: assets/teaser/SMD_r69_first_frame.jpg on the same official project.
+Publication category is resolved in the document head before paint; category buttons initialize before the bibliography and synchronize with browser history. Publication videos use data-src and only attach in the visible viewport, releasing sources outside it or on hidden pages. Preserve these behaviors when changing publication markup.

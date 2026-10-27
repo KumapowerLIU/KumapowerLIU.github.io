@@ -134,3 +134,19 @@ html[data-theme="dark"] .homepage {
   .home-hero--refined .home-focus-card { border-color: var(--editorial-line); }
   .home-hero--refined .home-action:not(.primary) { background: transparent; border-color: transparent; color: var(--editorial-accent); }
 }
+
+// Refined spacing and image-led research sections.
+html:root .homepage {
+  .post-header { padding-bottom: 1rem; margin-bottom: 2rem; }
+  .home-hero--refined .home-focus-card { padding-top: 1rem; }
+  .home-bio--refined { padding: 2rem 0 2.5rem; }
+  .home-section-highlights > h2 { font-size: clamp(2rem, 4vw, 3rem); }
+  .home-topics-heading h2 { font-size: clamp(2rem, 4vw, 3rem); }
+  .home-report-highlights { padding-top: 2rem; padding-bottom: 1.5rem; border-radius: 28px; }
+  .home-topic-card { border-radius: 24px; }
+  .home-topic-body { padding: 1.4rem; }
+  .home-topic-title-row h3 { font-size: 1.2rem; line-height: 1.3; }
+}
+@media (max-width: 767px) {
+  html:root .homepage .home-report-highlights { padding: .75rem .5rem 1rem; border-radius: 20px; }
+}

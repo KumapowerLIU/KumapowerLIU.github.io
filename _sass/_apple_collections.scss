@@ -124,3 +124,56 @@ html:root .memories-page {
 @media (max-width: 767px) {
   html:root .memories-page .memory-card-media { height: 400px; }
 }
+
+// Open, image-led collections and a compact research browser.
+html:root {
+  .project-showcase {
+    .project-showcase-header { padding-bottom: 2rem; }
+    .row > .col { flex: 0 0 50%; max-width: 50%; }
+    .card { border-radius: 24px; }
+    .card-body { padding: 1.75rem; }
+    .card-title { font-size: 1.65rem; letter-spacing: -.035em; }
+    .card-text { max-width: 36rem; }
+    .project-card-kicker { display: none; }
+  }
+  .publication-showcase {
+    .publication-hero { padding-bottom: 1.25rem; margin-bottom: 1rem; }
+    .publication-intro { font-size: clamp(1.2rem, 2.3vw, 1.65rem); line-height: 1.4; }
+    .publication-meta { margin-top: 1.25rem; align-items: center; }
+    .publication-note { flex-basis: 65%; }
+    .publication-note p { font-size: .8rem; }
+    .publication-action { min-height: 40px; padding: .6rem 1rem; font-size: .9rem; }
+    .publication-search-panel { grid-template-columns: auto minmax(0, 1fr); padding: .85rem 1rem; margin-bottom: 1rem; gap: 1.25rem; }
+    .search-panel-label { margin: 0; font-size: .9rem; text-transform: none; letter-spacing: 0; color: var(--collection-ink); }
+    .bibsearch-form-input { max-width: none; min-height: 44px; margin: 0; padding: .65rem 1rem; }
+    .publications-collection h2.bibliography { margin-top: 1.5rem; }
+  }
+  .memories-page {
+    .memories-eyebrow { margin-bottom: 1rem; color: var(--collection-muted); font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; }
+    .memories-header h2 { font-size: clamp(1.2rem, 2.3vw, 1.65rem); }
+    .memories-intro { display: none; }
+    .memories-stats { margin-top: 1.25rem; }
+    .memory-card-media { border-radius: 24px; }
+  }
+}
+@media (max-width: 767px) {
+  html:root .project-showcase {
+    .row > .col { flex-basis: 100%; max-width: 100%; }
+    .card-body { padding: 1.35rem; }
+  }
+  html:root .publication-showcase {
+    .publication-note { flex-basis: 100%; }
+    .publication-action { width: auto; }
+    .publication-search-panel { grid-template-columns: 1fr; gap: .5rem; }
+  }
+}
+// A consistent, quiet navigation treatment across the four main pages.
+body:has(.homepage, .project-showcase, .publication-showcase, .memories-page) #navbar {
+  background: rgba(255,255,255,.92); backdrop-filter: blur(18px); box-shadow: none; border-bottom: 1px solid #e8e8ed;
+  .nav-link { font-size: .875rem; }
+  .nav-item.active .nav-link { color: #0066cc; }
+}
+html[data-theme="dark"] body:has(.homepage, .project-showcase, .publication-showcase, .memories-page) #navbar {
+  background: rgba(22,22,23,.92); border-bottom-color: #333336;
+  .nav-item.active .nav-link { color: #2997ff; }
+}

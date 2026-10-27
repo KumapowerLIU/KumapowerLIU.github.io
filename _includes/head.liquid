@@ -1,3 +1,19 @@
+{% if page.permalink == '/publications/' %}
+<!-- Resolve the requested category before any publication content can paint. -->
+<script>
+  (function () {
+    var category = new URLSearchParams(window.location.search).get('category');
+    document.documentElement.dataset.publicationCategory = ['full', 'selected', '2d', '3d', '4d'].indexOf(category) >= 0 ? category : 'selected';
+  })();
+</script>
+<style>
+  html[data-publication-category] .publication-showcase .publications-collection { display: none !important; }
+  {% assign publication_categories = 'full,selected,2d,3d,4d' | split: ',' %}
+  {% for category in publication_categories %}
+  html[data-publication-category="{{ category }}"] .publication-showcase .publications-collection[data-category="{{ category }}"] { display: block !important; }
+  {% endfor %}
+</style>
+{% endif %}
 <!-- Metadata, OpenGraph and Schema.org -->
 {% include metadata.liquid %}
 

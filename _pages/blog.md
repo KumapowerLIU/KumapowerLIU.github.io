@@ -12,8 +12,9 @@ nav_order: 4
 {% assign featured_memories = site.data.memories | where: "featured", true %}
 
   <div class="header-bar memories-header">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
+    <p class="memories-eyebrow">Outside the lab</p>
+    <h1>Memories</h1>
+    <h2>Fishing, familiar places, and small moments.</h2>
   </div>
   <div class="memories-intro">
     <p>A lighter page for fishing, travel, and the small moments worth keeping.</p>
