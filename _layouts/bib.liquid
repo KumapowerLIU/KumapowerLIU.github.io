@@ -44,12 +44,14 @@
           {% endif %}
         {% endif %}
         {% if entry.preview %}
-        {% if entry.preview contains '://' %}
+        {% assign preview_is_video = false %}
+        {% if entry.preview contains '.mp4' or entry.preview contains '.webm' or entry.preview contains '.mov' %}{% assign preview_is_video = true %}{% endif %}
+        {% if entry.preview contains '://' and preview_is_video == false %}
           <img class="{{ preview_classes }}" src="{{ entry.preview }}" alt="{{ entry.title | escape }}" loading="lazy">
         {% elsif entry.preview contains '.mp4' or entry.preview contains '.webm' or entry.preview contains '.mov' %}
           {% assign preview_first_character = entry.preview | slice: 0 %}
           {% assign preview_video_path = entry.preview %}
-          {% unless preview_first_character == '/' %}
+          {% unless preview_first_character == '/' or entry.preview contains '://' %}
             {% assign preview_video_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
           {% endunless %}
           <video
