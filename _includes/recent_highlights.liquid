@@ -3,6 +3,24 @@
     <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide" data-position="center" aria-hidden="false">
       <video
         class="home-report-media"
+        data-src="{{ 'assets/video/highlights/longcat16.mp4' | relative_url }}"
+        poster="{{ 'assets/img/project/longcat16-poster.jpg' | relative_url }}"
+        muted
+        loop
+        playsinline
+        preload="none"
+        aria-label="LongCat-Video-Avatar 1.6 video preview"
+      ></video>
+      <div class="home-report-body">
+        <span>Meituan LongCat · Technical Report</span>
+        <h3>LongCat-Video-Avatar 1.6</h3>
+        <p>Expressive audio-driven avatars with OPSD-V-based post-training for coherent video generation up to 10 minutes.</p>
+        {% include highlight_links.liquid title="LongCat-Video-Avatar 1.6" project="https://meigen-ai.github.io/LongCat-Video-Avatar-1.6-Page/" paper="https://github.com/meituan-longcat/LongCat-Video/blob/main/assets/LongCat-Video-Avatar-1.6-Tech-Report.pdf" code="https://github.com/meituan-longcat/LongCat-Video" %}
+      </div>
+    </article>
+    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide" data-position="right" aria-hidden="false">
+      <video
+        class="home-report-media"
         data-src="{{ 'assets/video/highlights/opsdv.mp4' | relative_url }}"
         poster="{{ 'assets/img/project/opsdv-poster.jpg' | relative_url }}"
         muted
@@ -18,7 +36,7 @@
         {% include highlight_links.liquid title="OPSD-V" project="https://meigen-ai.github.io/OPSD-V/" paper="https://arxiv.org/abs/2607.08766" code="https://github.com/MeiGen-AI/OPSD-V" %}
       </div>
     </article>
-    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide" data-position="right" aria-hidden="false">
+    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide" data-position="hidden" aria-hidden="true" inert>
       <video
         class="home-report-media"
         data-src="{{ 'assets/video/highlights/helixworld.mp4' | relative_url }}"
@@ -61,24 +79,6 @@
         <h3>WorldSonus</h3>
         <p>Streaming stereo sound for visual worlds, with motion-aligned audio and text instructions that can change during generation.</p>
         {% include highlight_links.liquid title="WorldSonus" project="https://noizai.github.io/WorldSonus/" code="https://github.com/NoizAI/WorldSonus" paper="https://arxiv.org/abs/2610.08760" %}
-      </div>
-    </article>
-    <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide" data-position="hidden" aria-hidden="true" inert>
-      <video
-        class="home-report-media"
-        data-src="{{ 'assets/video/highlights/longcat.mp4' | relative_url }}"
-        poster="{{ 'assets/img/project/longcat-video-avatar-poster.png' | relative_url }}"
-        muted
-        loop
-        playsinline
-        preload="none"
-        aria-label="LongCat-Video-Avatar 1.5 video preview"
-      ></video>
-      <div class="home-report-body">
-        <span>Meituan LongCat · Technical Report</span>
-        <h3>LongCat-Video-Avatar 1.5</h3>
-        <p>Open-source audio-driven avatar video generation with stronger lip sync, long-video stability, and practical 8-step inference.</p>
-        {% include highlight_links.liquid title="LongCat-Video-Avatar 1.5" project="https://meigen-ai.github.io/LongCat-Video-Avatar-1.5-Page/" paper="https://arxiv.org/abs/2605.26486" code="https://github.com/meituan-longcat/LongCat-Video" %}
       </div>
     </article>
     <article class="home-report-card" tabindex="0" role="group" aria-roledescription="slide" data-position="left" aria-hidden="false">

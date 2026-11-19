@@ -30,7 +30,7 @@ Spacing scale: 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 px. Major research sections h
 2. Three short biography paragraphs, preserving identity/advisor, research interests and fishing. Current emphasis: post-training world models and embodied intelligence.
 3. Eight affiliations, with transparent NVIDIA logo and no individual logo boxes.
 4. News: readable dates and complete announcements. Do not fabricate acceptance details.
-5. Recent Highlights: plain heading, 3D carousel, original complete videos represented by lightweight previews. Initial center OPSD-V, left DyaPlex, right HelixWorld. Keep WorldSonus and LongCat accessible. Project Page / Code / Paper links appear only when available.
+5. Recent Highlights: plain heading, 3D carousel, original complete videos represented by lightweight previews. Initial center LongCat-Video-Avatar 1.6, left DyaPlex, right OPSD-V. Keep WorldSonus and LongCat accessible. Project Page / Code / Paper links appear only when available.
 6. Research topics: World Models left, Human-Centered Spatial Intelligence middle, Image Generation & Editing right. Three desktop columns, stacked on smaller screens.
 7. Compact contact links.
 
@@ -67,3 +67,6 @@ Keep the cover compact without a separate research-focus headline; the biography
 ## October 27 content and navigation update
 SMD metadata is verified against its official repository and arXiv:2610.18472. The highlight and 4d publication use the full official teaser from https://zjwfufu.github.io/SMD-Page/assets/teaser/SMD_r69_1080p_x264.mp4, re-encoded for delivery without trimming or dropping audio. Poster source: assets/teaser/SMD_r69_first_frame.jpg on the same official project.
 Publication category is resolved in the document head before paint; category buttons initialize before the bibliography and synchronize with browser history. Publication videos use data-src and only attach in the visible viewport, releasing sources outside it or on hidden pages. Preserve these behaviors when changing publication markup.
+
+## November 20 update
+LongCat-Video-Avatar 1.6 replaces 1.5 in Recent Highlights and Projects and becomes the initial center slide. Its official introduction video is re-encoded in full with audio and faststart; 1.5 remains as a historical publication outside Selected. News describes generated duration (up to 10 minutes), not inference latency. Metadata and OPSD-V adaptation are verified against the official 1.6 technical report.
